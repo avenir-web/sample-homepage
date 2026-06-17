@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SALON LUMIÈRE | 銀座の美容室</title>
+  <meta name="description" content="銀座のプレミアム美容室 SALON LUMIÈRE。カット・カラー・パーマ・ヘッドスパ・着付けまで。経験豊富なスタイリストがあなたの美をプロデュースします。">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ナビ -->
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">LUMIÈRE</a>
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="stylist.html">Stylist</a>
+      <a href="access.html">Access</a>
+      <a href="access.html#reserve" class="nav-btn">予約する</a>
+    </div>
+    <button class="nav-burger" onclick="toggleMenu()">&#9776;</button>
+  </nav>
+  <div class="nav-mobile" id="mobileMenu">
+    <button class="nav-mobile-close" onclick="toggleMenu()">✕</button>
+    <a href="index.html" class="active">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="stylist.html">Stylist</a>
+    <a href="access.html">Access</a>
+    <a href="access.html#reserve">予約する</a>
+  </div>
+
+  <!-- ヒーロー -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-sub">銀座プレミアムサロン</p>
+      <h1 class="hero-title">SALON<br><em>LUMIÈRE</em></h1>
+      <p class="hero-desc">光のように美しく、あなたらしさを引き出す</p>
+      <div class="hero-actions">
+        <a href="access.html#reserve" class="btn btn--gold">無料カウンセリング予約</a>
+        <a href="menu.html" class="btn btn--line-gold">メニューを見る</a>
+      </div>
+    </div>
+    <div class="hero-scroll">scroll ↓</div>
+  </section>
+
+  <!-- コンセプト -->
+  <section class="section">
+    <div class="container">
+      <div class="concept-grid">
+        <div class="concept-img">
+          <img src="images/jessie-dee-dabrowski-www-jessiedee-net-W6cwaL7PMSw-unsplash.jpg" alt="ハイライトを施したロングヘア">
+        </div>
+        <div class="concept-text">
+          <p class="section-label">Our Concept</p>
+          <h2>あなたの美しさを<br>最大限に引き出す</h2>
+          <p>SALON LUMIÈREは、フランス語で「光」を意味します。一人ひとりの個性と魅力を光のように輝かせることが、私たちの使命です。</p>
+          <p>銀座の地で10年以上、延べ15,000名以上のお客様の美をプロデュースしてきました。経験豊富なスタイリストが、あなたのライフスタイルや骨格・髪質を丁寧に分析し、最高の仕上がりをご提案します。</p>
+          <div class="concept-numbers">
+            <div class="num-item"><span class="num">15,000+</span><span class="num-label">累計来客数</span></div>
+            <div class="num-item"><span class="num">10</span><span class="num-label">年の実績</span></div>
+            <div class="num-item"><span class="num">98%</span><span class="num-label">リピート率</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- メニュー抜粋 -->
+  <section class="section section--cream">
+    <div class="container">
+      <p class="section-label center">Service Menu</p>
+      <h2 class="section-title center">主なメニュー</h2>
+      <div class="menu-cards">
+        <article class="menu-card">
+          <div class="mc-img"><img src="images/dwi-agus-prasetiyo-EMeWJb_RuoQ-unsplash.jpg" alt="裾カラーのボブ"></div>
+          <div class="mc-body">
+            <div class="mc-icon">✂</div>
+            <h3>カット</h3>
+            <p>骨格診断に基づいたカスタムカット。あなたの輪郭を最も美しく見せるスタイルに。</p>
+            <div class="mc-price">¥6,600〜</div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <div class="mc-img"><img src="images/jessie-dee-dabrowski-www-jessiedee-net-TETR8YLSqt4-unsplash.jpg" alt="デザインカラー"></div>
+          <div class="mc-body">
+            <div class="mc-icon">◈</div>
+            <h3>カラー</h3>
+            <p>透明感のあるトレンドカラーからハイトーン・デザインカラーまで。色持ちにこだわります。</p>
+            <div class="mc-price">¥8,800〜</div>
+          </div>
+        </article>
+        <article class="menu-card">
+          <div class="mc-img"><img src="images/ramon-benitez-netaAK35IUc-unsplash.jpg" alt="ウェーブパーマ"></div>
+          <div class="mc-body">
+            <div class="mc-icon">◎</div>
+            <h3>パーマ</h3>
+            <p>髪質改善と組み合わせた次世代パーマ。ダメージレスで美しいウェーブを実現します。</p>
+            <div class="mc-price">¥11,000〜</div>
+          </div>
+        </article>
+      </div>
+      <p class="center" style="margin-top:44px;"><a href="menu.html" class="btn btn--line-dark">すべてのメニューを見る →</a></p>
+    </div>
+  </section>
+
+  <!-- ギャラリー抜粋 -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label center">Style Gallery</p>
+      <h2 class="section-title center">施術例</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="images/dwi-agus-prasetiyo-EMeWJb_RuoQ-unsplash.jpg" alt="裾カラーボブ"><div class="gi-cap"><span class="gi-tag">COLOR</span><span class="gi-title">裾カラー × ボブ</span></div></div>
+        <div class="gallery-item"><img src="images/jessie-dee-dabrowski-www-jessiedee-net-W6cwaL7PMSw-unsplash.jpg" alt="ハイライト"><div class="gi-cap"><span class="gi-tag">COLOR</span><span class="gi-title">ハイライト × ロング</span></div></div>
+        <div class="gallery-item"><img src="images/ramon-benitez-netaAK35IUc-unsplash.jpg" alt="ベージュウェーブ"><div class="gi-cap"><span class="gi-tag">PERM</span><span class="gi-title">ベージュ × ウェーブ</span></div></div>
+        <div class="gallery-item"><img src="images/pexels-minan1398-1645901.jpg" alt="艶髪ストレート"><div class="gi-cap"><span class="gi-tag">STRAIGHT</span><span class="gi-title">髪質改善 × 艶髪</span></div></div>
+      </div>
+      <p class="center" style="margin-top:44px;"><a href="gallery.html" class="btn btn--line-dark">ギャラリーをもっと見る →</a></p>
+    </div>
+  </section>
+
+  <!-- お客様の声 -->
+  <section class="section section--dark">
+    <div class="container">
+      <p class="section-label center">Customer Voice</p>
+      <h2 class="section-title center" style="color:#fff;">お客様の声</h2>
+      <div class="voice-grid">
+        <article class="voice-card"><div class="stars">★★★★★</div><p>「カウンセリングがとても丁寧で、希望通りの仕上がりに。職場でも褒められました！」</p><p class="voice-name">— 30代 会社員 S.K様</p></article>
+        <article class="voice-card"><div class="stars">★★★★★</div><p>「ヘッドスパが最高に気持ちよくて、施術中に眠ってしまいました。月1で通っています。」</p><p class="voice-name">— 40代 主婦 M.T様</p></article>
+        <article class="voice-card"><div class="stars">★★★★★</div><p>「傷んでいた髪がトリートメント後にサラサラに。こんなに変わるとは思いませんでした！」</p><p class="voice-name">— 20代 学生 A.Y様</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ページ送り -->
+  <div class="pagelinks">
+    <a href="stylist.html" class="pagelink"><span class="pl-en">Stylist</span><span class="pl-jp">スタイリスト紹介</span><span class="pl-arrow">→</span></a>
+    <a href="menu.html" class="pagelink"><span class="pl-en">Menu &amp; Price</span><span class="pl-jp">メニュー・料金</span><span class="pl-arrow">→</span></a>
+    <a href="access.html" class="pagelink"><span class="pl-en">Access</span><span class="pl-jp">アクセス・予約</span><span class="pl-arrow">→</span></a>
+  </div>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-logo">LUMIÈRE</div>
+          <p class="footer-tagline">光のように美しく</p>
+        </div>
+        <nav class="footer-nav">
+          <div>
+            <h4>MENU</h4>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="gallery.html">Gallery</a>
+          </div>
+          <div>
+            <h4>INFO</h4>
+            <a href="stylist.html">Stylist</a>
+            <a href="access.html">Access</a>
+            <a href="access.html#reserve">予約する</a>
+          </div>
+        </nav>
+      </div>
+      <p class="footer-copy">© 2026 SALON LUMIÈRE. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

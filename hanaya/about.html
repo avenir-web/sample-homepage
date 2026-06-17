@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お店のこと｜花日和 hanabiyori</title>
+  <meta name="description" content="鎌倉・由比ヶ浜の花屋「花日和」のお店と店主のご紹介。パリで花を学んだ店主が、暮らしに寄り添う花をお届けします。">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Kaisei+Decol:wght@400;500&family=Yomogi&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="head">
+    <div class="head-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-icon">🌷</span>
+        <span class="brand-text"><span class="b-jp">花日和</span><span class="b-en">hanabiyori</span></span>
+      </a>
+      <nav class="gnav">
+        <a href="index.html">ホーム</a>
+        <a href="about.html" class="on">お店のこと</a>
+        <a href="flowers.html">花とギフト</a>
+        <a href="blog.html">花日記</a>
+        <a href="access.html">アクセス</a>
+        <a href="access.html#order" class="nav-order">ご注文</a>
+      </nav>
+      <button class="burger" onclick="toggleNav()">☰</button>
+    </div>
+  </header>
+  <nav class="spnav" id="spNav">
+    <button class="spclose" onclick="toggleNav()">✕</button>
+    <a href="index.html" onclick="toggleNav()">ホーム</a>
+    <a href="about.html" onclick="toggleNav()">お店のこと</a>
+    <a href="flowers.html" onclick="toggleNav()">花とギフト</a>
+    <a href="blog.html" onclick="toggleNav()">花日記</a>
+    <a href="access.html" onclick="toggleNav()">アクセス</a>
+    <a href="access.html#order" class="nav-order" onclick="toggleNav()">ご注文</a>
+  </nav>
+
+  <div class="page-title">
+    <span class="pt-en">About our shop</span>
+    <h1>お店のこと</h1>
+    <p class="crumb"><a href="index.html">ホーム</a> ／ お店のこと</p>
+  </div>
+
+  <!-- ストーリー -->
+  <section class="section" style="padding-top:40px;">
+    <div class="wrap about-hero">
+      <div class="about-photos">
+        <figure class="snap a1 tilt-l"><span class="tape"></span><img src="images/19-pexels-khadija-qasanova-376394062-20295105.jpg" alt="店頭に並ぶ花束"><figcaption>店先の花たち</figcaption></figure>
+        <figure class="snap a2 tilt-r"><img src="images/26-pexels-sura-faris-1023767795-32506316.jpg" alt="お店の様子"><figcaption>由比ヶ浜の小店</figcaption></figure>
+      </div>
+      <div class="about-text">
+        <span class="label">Our story</span>
+        <h2>海の近くの、<br>ちいさな花屋です。</h2>
+        <p>花日和（はなびより）は、鎌倉・由比ヶ浜の路地にある小さな花屋です。2015年、店主の小川あかりが生まれ育った鎌倉でひっそりとオープンしました。</p>
+        <p>間口の狭いお店ですが、毎朝市場から届く花でいっぱいになります。「花のある暮らし」を、もっと気軽に楽しんでほしい——その思いで、一輪から束ねる小さな花束も、特別な日のブーケも、心を込めてお作りしています。</p>
+        <p>潮風の香る町で、季節のうつろいを花とともにお届けできたら。そんな願いを込めて、今日も店を開けています。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 店主プロフィール -->
+  <section class="section section--craft">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:40px;">
+        <span class="label center both">Florist</span>
+        <h2 class="sec-title center">店主のこと</h2>
+      </div>
+      <div class="profile-card">
+        <figure class="snap tilt-l"><span class="tape"></span><img src="images/06-golden-horn-bridge-VxtnLr6tBX4-unsplash.jpg" alt="店主 小川あかり"></figure>
+        <div>
+          <h3>小川 あかり</h3>
+          <p class="profile-role">Akari Ogawa — Florist &amp; Owner</p>
+          <p>鎌倉生まれ。大学卒業後、フラワーデザインを学ぶためにパリへ。現地の花店で3年間修行を積み、帰国。2015年、地元・鎌倉に「花日和」を開きました。気取らない、暮らしに寄り添う花づくりがモットーです。</p>
+          <ul class="profile-list">
+            <li>パリ国立園芸学校 フラワーデザイン課程 修了</li>
+            <li>フラワー装飾技能士 1級</li>
+            <li>鎌倉市内の結婚式・イベント装花も多数担当</li>
+            <li>休日は海辺の散歩と、古い喫茶店めぐり</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- こだわり -->
+  <section class="section">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:48px;">
+        <span class="label center both">Our promise</span>
+        <h2 class="sec-title center">大切にしている3つのこと</h2>
+      </div>
+      <div class="pick-grid">
+        <div class="pick">
+          <figure class="snap snap--plain tilt-l"><img src="images/17-pexels-isabelle-su-14865903-28947598.jpg" alt="新鮮な花"></figure>
+          <h3>① 鮮度</h3>
+          <p style="font-size:0.84rem;color:var(--brown-soft);text-align:center;margin-top:6px;">毎朝の市場仕入れで、いちばん元気な花を。</p>
+        </div>
+        <div class="pick">
+          <figure class="snap snap--plain tilt-r"><img src="images/21-pexels-nadialovessingle-20691418.jpg" alt="手づくりの花束"></figure>
+          <h3>② 手しごと</h3>
+          <p style="font-size:0.84rem;color:var(--brown-soft);text-align:center;margin-top:6px;">一束ずつ、その場で手づくり。同じものは二つとありません。</p>
+        </div>
+        <div class="pick">
+          <figure class="snap snap--plain tilt-l"><img src="images/24-pexels-sevde-sozer-337915290-29550203.jpg" alt="やさしい色あわせ"></figure>
+          <h3>③ 寄り添う</h3>
+          <p style="font-size:0.84rem;color:var(--brown-soft);text-align:center;margin-top:6px;">贈る人・飾る場所を思い浮かべて、ぴったりの花を。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 沿革 -->
+  <section class="section section--craft">
+    <div class="wrap wrap--narrow">
+      <div class="center" style="margin-bottom:40px;">
+        <span class="label center both">History</span>
+        <h2 class="sec-title center">花日和のあゆみ</h2>
+      </div>
+      <dl class="info-dl">
+        <div><dt>2012</dt><dd>店主、パリの花店での修行を終えて帰国</dd></div>
+        <div><dt>2015</dt><dd>鎌倉・由比ヶ浜に「花日和」オープン</dd></div>
+        <div><dt>2018</dt><dd>毎月のフラワーワークショップをはじめる</dd></div>
+        <div><dt>2021</dt><dd>オンラインでのご注文・配送に対応</dd></div>
+        <div><dt>2024</dt><dd>地元カフェ・ホテルへの定期装花を開始</dd></div>
+        <div><dt>2026</dt><dd>おかげさまで開店11年目を迎えました</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <!-- ページ送り -->
+  <section class="section">
+    <div class="wrap">
+      <div class="morelinks">
+        <a href="flowers.html" class="morelink"><span class="ml-ico">💐</span><span class="ml-en">Flowers</span><span class="ml-jp">花とギフト</span></a>
+        <a href="blog.html" class="morelink"><span class="ml-ico">📔</span><span class="ml-en">Journal</span><span class="ml-jp">花日記</span></a>
+        <a href="access.html" class="morelink"><span class="ml-ico">📍</span><span class="ml-en">Access</span><span class="ml-jp">アクセス</span></a>
+        <a href="access.html#order" class="morelink"><span class="ml-ico">✉️</span><span class="ml-en">Order</span><span class="ml-jp">ご注文</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot-top">
+        <div class="foot-brand">
+          <span class="fb-jp">花日和</span> <span class="fb-en">hanabiyori</span>
+          <p>鎌倉・由比ヶ浜のちいさな花屋。暮らしに花のある時間を、手づくりの温かさとともに。</p>
+        </div>
+        <div class="foot-col"><h4>Menu</h4><a href="index.html">ホーム</a><a href="about.html">お店のこと</a><a href="flowers.html">花とギフト</a><a href="blog.html">花日記</a></div>
+        <div class="foot-col"><h4>Shop</h4><a href="access.html">アクセス</a><a href="access.html#order">ご注文・お問い合わせ</a><a href="#">Instagram（準備中）</a></div>
+      </div>
+      <p class="foot-copy">© 2026 花日和 hanabiyori, Kamakura.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>花とギフト｜花日和 hanabiyori</title>
+  <meta name="description" content="花日和のブーケ・花束・アレンジメント・ギフト・ドライフラワー・ウェディング・ワークショップのご案内。季節の花でおつくりします。">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Kaisei+Decol:wght@400;500&family=Yomogi&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="head">
+    <div class="head-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-icon">🌷</span>
+        <span class="brand-text"><span class="b-jp">花日和</span><span class="b-en">hanabiyori</span></span>
+      </a>
+      <nav class="gnav">
+        <a href="index.html">ホーム</a>
+        <a href="about.html">お店のこと</a>
+        <a href="flowers.html" class="on">花とギフト</a>
+        <a href="blog.html">花日記</a>
+        <a href="access.html">アクセス</a>
+        <a href="access.html#order" class="nav-order">ご注文</a>
+      </nav>
+      <button class="burger" onclick="toggleNav()">☰</button>
+    </div>
+  </header>
+  <nav class="spnav" id="spNav">
+    <button class="spclose" onclick="toggleNav()">✕</button>
+    <a href="index.html" onclick="toggleNav()">ホーム</a>
+    <a href="about.html" onclick="toggleNav()">お店のこと</a>
+    <a href="flowers.html" onclick="toggleNav()">花とギフト</a>
+    <a href="blog.html" onclick="toggleNav()">花日記</a>
+    <a href="access.html" onclick="toggleNav()">アクセス</a>
+    <a href="access.html#order" class="nav-order" onclick="toggleNav()">ご注文</a>
+  </nav>
+
+  <div class="page-title">
+    <span class="pt-en">Flowers &amp; Gifts</span>
+    <h1>花とギフト</h1>
+    <p class="crumb"><a href="index.html">ホーム</a> ／ 花とギフト</p>
+  </div>
+
+  <section class="section" style="padding-top:30px;">
+    <div class="wrap">
+      <p class="center" style="color:var(--brown-soft);font-size:0.9rem;margin-bottom:40px;">価格はすべて目安です。ご予算に合わせておつくりしますので、お気軽にご相談ください。</p>
+      <div class="cat-nav">
+        <span class="on">すべて</span>
+        <span>ブーケ・花束</span>
+        <span>アレンジメント</span>
+        <span>ギフト</span>
+        <span>ドライ</span>
+        <span>ウェディング</span>
+      </div>
+
+      <!-- ブーケ・花束 -->
+      <div class="shop-block">
+        <div class="shop-block-head"><span class="sb-en">Bouquet</span><h2>ブーケ・花束</h2></div>
+        <div class="shop-grid">
+          <article class="product">
+            <div class="product-img"><img src="images/04-chaewon-lee-Df4bIoLSJCs-unsplash.jpg" alt="季節のミニブーケ"></div>
+            <div class="product-body"><span class="product-tag">いちばん人気</span><h3>季節のミニブーケ</h3><p>気軽に飾れる、手のひらサイズの花束。自分用にもどうぞ。</p><span class="product-price">¥1,200〜</span></div>
+          </article>
+          <article class="product">
+            <div class="product-img"><img src="images/01-aleksandra-sapozhnikova-asQ3m8WtBDc-unsplash.jpg" alt="おまかせブーケ"></div>
+            <div class="product-body"><span class="product-tag">おすすめ</span><h3>おまかせブーケ</h3><p>ご予算と色のご希望をうかがって、その日いちばんの花で。</p><span class="product-price">¥2,000〜</span></div>
+          </article>
+          <article class="product">
+            <div class="product-img"><img src="images/20-pexels-lena-ti-2153986577-36539702.jpg" alt="チューリップの花束"></div>
+            <div class="product-body"><span class="product-tag">季節限定</span><h3>チューリップの花束</h3><p>春のあいだだけの、ころんと愛らしい花束です。</p><span class="product-price">¥2,200〜</span></div>
+          </article>
+          <article class="product">
+            <div class="product-img"><img src="images/21-pexels-nadialovessingle-20691418.jpg" alt="カラフルブーケ"></div>
+            <div class="product-body"><span class="product-tag">元気カラー</span><h3>ビタミンブーケ</h3><p>明るい色を集めた、見ているだけで元気になる花束。</p><span class="product-price">¥2,800〜</span></div>
+          </article>
+          <article class="product">
+            <div class="product-img"><img src="images/24-pexels-sevde-sozer-337915290-29550203.jpg" alt="やさしい色の花束"></div>
+            <div class="product-body"><span class="product-tag">やさしい色</span><h3>パステルブーケ</h3><p>白〜淡いピンクでまとめた、上品でやわらかな花束。</p><span class="product-price">¥3,000〜</span></div>
+          </article>
+          <article class="product">
+            <div class="product-img"><img src="images/29-shche_-team-hY6mzHREM8I-unsplash.jpg" alt="ラッピングブーケ"></div>
+            <div class="product-body"><span class="product-tag">贈り物に</span><h3>ラッピングブーケ</h3><p>そのまま渡せる、丁寧に包んだ花束。手提げ袋付き。</p><span class="product-price">¥3,500〜</span></div>
+          </article>
+        </div>
+      </div>
+
+      <!-- アレンジメント -->
+      <div class="shop-block">
+        <div class="shop-block-head"><span class="sb-en">Arrangement</span><h2>アレンジメント</h2></div>
+        <div class="shop-grid">
+          <article class="product">
+            <div class="product-img"><img src="images/03-brigitte-tohm-0utRJ1mZoZg-unsplash.jpg" alt="花瓶アレンジ"></div>
+            <div class="product-body"><span class="product-tag">そのまま飾れる</span><h3>花瓶アレンジ</h3><p>器付きで、届いたその日から飾れるアレンジメント。</p><span class="product-price">¥3,500〜</span></div>
+          </article>
+          <article class="product">
+            <div class="product-img"><img src="images/07-markus-clemens-mibjbNoS1XA-unsplash.jpg" alt="ナチュラルアレンジ"></div>
+            <div class="product-body"><span class="product-tag">ナチュラル</span><h3>ナチュラルアレンジ</h3><p>枝ものを生かした、すっとした佇まいのアレンジ。</p><span class="product-price">¥4,000〜</span></div>
+          </article>
+          <article class="product">
+            <div class="product-img"><img src="images/18-pexels-kallydru-35349246.jpg" alt="お祝いアレンジ"></div>
+            <div class="product-body"><span class="product-tag">お祝いに</span><h3>華やかアレンジ</h3><p>開店祝い・記念日に。ボリュームたっぷりの豪華な一鉢。</p><span class="product-price">¥6,000〜</span></div>
+          </article>
+        </div>
+      </div>
+
+      <!-- ギフト -->
+      <div class="shop-block">
+        <div class="shop-block-head"><span class="sb-en">Gift</span><h2>ギフト・お祝い</h2></div>
+        <div class="shop-grid">
+          <article class="product">
+            <div class="product-img"><img src="images/13-pexels-chimango-hara-2155071143-33591601.jpg" alt="メッセージ付きブーケ"></div>
+            <div class="product-body"><span class="product-tag">カード付き</span><h3>メッセージブーケ</h3><p>手書きのメッセージカードを添えて。誕生日や記念日に。</p><span class="product-price">¥3,300〜</span></div>
+          </article>
+          <article class="product">
+            <div class="product-img"><img src="images/25-pexels-shalenderkumar-6656237.jpg" alt="豪華な花束"></div>
+            <div class="product-body"><span class="product-tag">特別な日に</span><h3>プレミアムブーケ</h3><p>バラやユリをたっぷりと。大切な記念日のための一束。</p><span class="product-price">¥5,500〜</span></div>
+          </article>
+          <article class="product">
+            <div class="product-img"><img src="images/27-pexels-zmaysq-1725935641-37602864.jpg" alt="お供えの花"></div>
+            <div class="product-body"><span class="product-tag">お供え</span><h3>お供えの花</h3><p>故人を偲ぶ、やさしい色合いの花束・アレンジ。</p><span class="product-price">¥3,000〜</span></div>
+          </article>
+        </div>
+      </div>
+
+      <!-- ドライ -->
+      <div class="shop-block">
+        <div class="shop-block-head"><span class="sb-en">Dried</span><h2>ドライフラワー</h2></div>
+        <div class="shop-grid">
+          <article class="product">
+            <div class="product-img"><img src="images/16-pexels-fj-robertson-36098874-35120056.jpg" alt="ドライフラワースワッグ"></div>
+            <div class="product-body"><span class="product-tag">長く飾れる</span><h3>ドライスワッグ</h3><p>壁にかけて楽しむ、アンティークな風合いの花束。</p><span class="product-price">¥1,800〜</span></div>
+          </article>
+          <article class="product">
+            <div class="product-img"><img src="images/11-pexels-berkecanavci-20769919.jpg" alt="ミモザのドライ"></div>
+            <div class="product-body"><span class="product-tag">季節限定</span><h3>ミモザのリース</h3><p>春の訪れを告げる黄色いミモザ。玄関にもおすすめ。</p><span class="product-price">¥2,400〜</span></div>
+          </article>
+          <article class="product">
+            <div class="product-img"><img src="images/15-pexels-dongdilac-34088483.jpg" alt="一輪挿しドライ"></div>
+            <div class="product-body"><span class="product-tag">手軽に</span><h3>一輪挿しセット</h3><p>小瓶とドライフラワーのセット。デスクや窓辺にそっと。</p><span class="product-price">¥1,500〜</span></div>
+          </article>
+        </div>
+      </div>
+
+      <!-- ウェディング -->
+      <div class="shop-block">
+        <div class="shop-block-head"><span class="sb-en">Wedding &amp; Workshop</span><h2>ウェディング・ワークショップ</h2></div>
+        <div class="shop-grid">
+          <article class="product">
+            <div class="product-img"><img src="images/28-rebecca-A_fBQe39A4k-unsplash.jpg" alt="ウェディングブーケ"></div>
+            <div class="product-body"><span class="product-tag">完全予約制</span><h3>ウェディングブーケ</h3><p>打ち合わせから当日のお渡しまで。花嫁に寄り添う一束。</p><span class="product-price">¥25,000〜</span></div>
+          </article>
+          <article class="product">
+            <div class="product-img"><img src="images/12-pexels-bitugbaa-34596342.jpg" alt="装花"></div>
+            <div class="product-body"><span class="product-tag">法人対応</span><h3>店舗・会場装花</h3><p>カフェ・ホテル・イベント会場の定期装花も承ります。</p><span class="product-price">¥8,000〜</span></div>
+          </article>
+          <article class="product">
+            <div class="product-img"><img src="images/08-molly-e-bossardt-zrS5F72-mTI-unsplash.jpg" alt="ワークショップ"></div>
+            <div class="product-body"><span class="product-tag">毎月開催</span><h3>フラワーワークショップ</h3><p>初めての方も90分で1作品。詳しくは花日記をご覧ください。</p><span class="product-price">¥3,800</span></div>
+          </article>
+        </div>
+      </div>
+
+      <div class="center" style="margin-top:20px;">
+        <a href="access.html#order" class="btn btn--terra">この花を注文・相談する 🌿</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 季節の花 -->
+  <section class="section section--craft">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:48px;">
+        <span class="label center both">Seasonal</span>
+        <h2 class="sec-title center">季節のおすすめ</h2>
+      </div>
+      <div class="season-grid">
+        <div class="season-card">
+          <figure class="snap snap--plain tilt-l"><img src="images/20-pexels-lena-ti-2153986577-36539702.jpg" alt="春の花"></figure>
+          <span class="season-en">Spring</span>
+          <h3>春</h3>
+          <p>チューリップ・桜・ミモザ</p>
+        </div>
+        <div class="season-card">
+          <figure class="snap snap--plain tilt-r"><img src="images/26-pexels-sura-faris-1023767795-32506316.jpg" alt="夏の花"></figure>
+          <span class="season-en">Summer</span>
+          <h3>夏</h3>
+          <p>ひまわり・紫陽花・芍薬</p>
+        </div>
+        <div class="season-card">
+          <figure class="snap snap--plain tilt-l"><img src="images/02-angelina-jollivet-mNEpmNiFdXs-unsplash.jpg" alt="秋の花"></figure>
+          <span class="season-en">Autumn</span>
+          <h3>秋</h3>
+          <p>ダリア・コスモス・実もの</p>
+        </div>
+        <div class="season-card">
+          <figure class="snap snap--plain tilt-r"><img src="images/05-ed-robertson-UrF1Jf5PamQ-unsplash.jpg" alt="冬の花"></figure>
+          <span class="season-en">Winter</span>
+          <h3>冬</h3>
+          <p>ラナンキュラス・薔薇・松</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot-top">
+        <div class="foot-brand">
+          <span class="fb-jp">花日和</span> <span class="fb-en">hanabiyori</span>
+          <p>鎌倉・由比ヶ浜のちいさな花屋。暮らしに花のある時間を、手づくりの温かさとともに。</p>
+        </div>
+        <div class="foot-col"><h4>Menu</h4><a href="index.html">ホーム</a><a href="about.html">お店のこと</a><a href="flowers.html">花とギフト</a><a href="blog.html">花日記</a></div>
+        <div class="foot-col"><h4>Shop</h4><a href="access.html">アクセス</a><a href="access.html#order">ご注文・お問い合わせ</a><a href="#">Instagram（準備中）</a></div>
+      </div>
+      <p class="foot-copy">© 2026 花日和 hanabiyori, Kamakura.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

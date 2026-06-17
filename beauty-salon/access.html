@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>アクセス・ご予約 | SALON LUMIÈRE</title>
+  <meta name="description" content="SALON LUMIÈRE（銀座）のアクセス・営業時間・ご予約フォーム。東京メトロ銀座駅より徒歩2分。初回カウンセリング無料。">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav solid">
+    <a href="index.html" class="nav-logo">LUMIÈRE</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="stylist.html">Stylist</a>
+      <a href="access.html" class="active">Access</a>
+      <a href="#reserve" class="nav-btn">予約する</a>
+    </div>
+    <button class="nav-burger" onclick="toggleMenu()">&#9776;</button>
+  </nav>
+  <div class="nav-mobile" id="mobileMenu">
+    <button class="nav-mobile-close" onclick="toggleMenu()">✕</button>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="stylist.html">Stylist</a>
+    <a href="access.html" class="active">Access</a>
+    <a href="#reserve">予約する</a>
+  </div>
+
+  <header class="page-hero">
+    <div class="page-hero-inner">
+      <span class="ph-en">Access &amp; Reservation</span>
+      <h1>Access</h1>
+      <p class="ph-jp">アクセス・ご予約</p>
+      <p class="breadcrumb"><a href="index.html">Home</a> ／ Access</p>
+    </div>
+  </header>
+
+  <!-- アクセス -->
+  <section class="section">
+    <div class="container">
+      <p class="section-label center">Access</p>
+      <h2 class="section-title center">アクセス</h2>
+      <div class="access-grid">
+        <div class="map-frame">📍 Google Map 埋め込みスペース</div>
+        <div class="access-info">
+          <div class="access-item"><h4>住所</h4><p>東京都中央区銀座5-3-12<br>銀座ラ・メゾンビル 3F</p></div>
+          <div class="access-item"><h4>営業時間</h4><p>平日 10:00〜21:00 ／ 土日祝 9:00〜19:00</p></div>
+          <div class="access-item"><h4>定休日</h4><p>毎週月曜日</p></div>
+          <div class="access-item"><h4>アクセス</h4><p>東京メトロ銀座駅 B4出口より徒歩2分<br>JR有楽町駅 中央口より徒歩5分</p></div>
+          <div class="access-item"><h4>電話番号</h4><p>03-XXXX-XXXX</p></div>
+          <div class="access-item"><h4>お支払い</h4><p>現金・各種クレジットカード・電子マネー・QR決済</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 予約フォーム -->
+  <section class="section section--cream" id="reserve">
+    <div class="container">
+      <p class="section-label center">Reservation</p>
+      <h2 class="section-title center">ご予約・お問い合わせ</h2>
+      <p class="center" style="color:var(--gray); font-size:0.9rem; margin-top:-30px; margin-bottom:48px;">初回カウンセリングは無料です。お気軽にご連絡ください。</p>
+      <form class="contact-form" onsubmit="return false;">
+        <div class="form-row">
+          <div class="form-group">
+            <label>お名前 <span class="required">*</span></label>
+            <input type="text" placeholder="山田 花子">
+          </div>
+          <div class="form-group">
+            <label>電話番号 <span class="required">*</span></label>
+            <input type="tel" placeholder="090-XXXX-XXXX">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>メールアドレス</label>
+            <input type="email" placeholder="example@email.com">
+          </div>
+          <div class="form-group">
+            <label>ご希望メニュー</label>
+            <select>
+              <option value="">選択してください</option>
+              <option>カット</option>
+              <option>カラー</option>
+              <option>パーマ</option>
+              <option>ストレート・髪質改善</option>
+              <option>トリートメント</option>
+              <option>ヘッドスパ</option>
+              <option>ヘアセット・着付け</option>
+              <option>メンズメニュー</option>
+              <option>セットメニュー（カット+カラー等）</option>
+              <option>まずは相談したい</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>ご希望スタイリスト</label>
+            <select>
+              <option value="">指名なし</option>
+              <option>田中 美咲（ディレクター）</option>
+              <option>山田 健太</option>
+              <option>佐藤 麻衣</option>
+              <option>小林 優香</option>
+              <option>中村 涼</option>
+              <option>鈴木 彩</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>ご希望日時</label>
+            <input type="text" placeholder="〇月〇日 午後など">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>その他ご要望・メッセージ</label>
+          <textarea rows="4" placeholder="例：初めての来店で、明るめのカラーについて相談したいです。"></textarea>
+        </div>
+        <button type="submit" class="form-btn">予約リクエストを送る</button>
+      </form>
+    </div>
+  </section>
+
+  <div class="pagelinks">
+    <a href="menu.html" class="pagelink"><span class="pl-en">Menu &amp; Price</span><span class="pl-jp">メニュー・料金</span><span class="pl-arrow">→</span></a>
+    <a href="gallery.html" class="pagelink"><span class="pl-en">Gallery</span><span class="pl-jp">施術例ギャラリー</span><span class="pl-arrow">→</span></a>
+    <a href="stylist.html" class="pagelink"><span class="pl-en">Stylist</span><span class="pl-jp">スタイリスト紹介</span><span class="pl-arrow">→</span></a>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-logo">LUMIÈRE</div>
+          <p class="footer-tagline">光のように美しく</p>
+        </div>
+        <nav class="footer-nav">
+          <div><h4>MENU</h4><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="gallery.html">Gallery</a></div>
+          <div><h4>INFO</h4><a href="stylist.html">Stylist</a><a href="access.html">Access</a><a href="access.html#reserve">予約する</a></div>
+        </nav>
+      </div>
+      <p class="footer-copy">© 2026 SALON LUMIÈRE. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

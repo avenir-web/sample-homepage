@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>施術例ギャラリー | SALON LUMIÈRE</title>
+  <meta name="description" content="SALON LUMIÈREの施術例ギャラリー。カラー・ハイライト・デザインカラー・パーマ・ストレート・ヘアセット・メンズスタイルの実例をご紹介します。">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav solid">
+    <a href="index.html" class="nav-logo">LUMIÈRE</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="stylist.html">Stylist</a>
+      <a href="access.html">Access</a>
+      <a href="access.html#reserve" class="nav-btn">予約する</a>
+    </div>
+    <button class="nav-burger" onclick="toggleMenu()">&#9776;</button>
+  </nav>
+  <div class="nav-mobile" id="mobileMenu">
+    <button class="nav-mobile-close" onclick="toggleMenu()">✕</button>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="gallery.html" class="active">Gallery</a>
+    <a href="stylist.html">Stylist</a>
+    <a href="access.html">Access</a>
+    <a href="access.html#reserve">予約する</a>
+  </div>
+
+  <header class="page-hero">
+    <div class="page-hero-inner">
+      <span class="ph-en">Style Gallery</span>
+      <h1>Gallery</h1>
+      <p class="ph-jp">施術例ギャラリー</p>
+      <p class="breadcrumb"><a href="index.html">Home</a> ／ Gallery</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <p class="section-label center">Our Works</p>
+      <h2 class="section-title center">スタイル施術例</h2>
+      <div class="gallery-filter">
+        <span class="on">All</span>
+        <span>Color</span>
+        <span>Perm</span>
+        <span>Straight</span>
+        <span>Set</span>
+        <span>Mens</span>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-tall">
+          <img src="images/jessie-dee-dabrowski-www-jessiedee-net-TETR8YLSqt4-unsplash.jpg" alt="ユニコーンカラー">
+          <div class="gi-cap"><span class="gi-tag">DESIGN COLOR</span><span class="gi-title">ユニコーンカラー</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/dwi-agus-prasetiyo-EMeWJb_RuoQ-unsplash.jpg" alt="裾カラーボブ">
+          <div class="gi-cap"><span class="gi-tag">COLOR / CUT</span><span class="gi-title">裾カラー × ショートボブ</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/jessie-dee-dabrowski-www-jessiedee-net-W6cwaL7PMSw-unsplash.jpg" alt="ハイライトロング">
+          <div class="gi-cap"><span class="gi-tag">HIGHLIGHT</span><span class="gi-title">ハイライト × ロングレイヤー</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/ramon-benitez-netaAK35IUc-unsplash.jpg" alt="ベージュウェーブ">
+          <div class="gi-cap"><span class="gi-tag">PERM / COLOR</span><span class="gi-title">ベージュ × ゆるふわウェーブ</span></div>
+        </div>
+        <div class="gallery-item gallery-tall">
+          <img src="images/pexels-minan1398-1645901.jpg" alt="艶髪ストレート">
+          <div class="gi-cap"><span class="gi-tag">STRAIGHT</span><span class="gi-title">髪質改善 × 艶ストレート</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/pexels-kensei-11406238.jpg" alt="和装ヘアセット">
+          <div class="gi-cap"><span class="gi-tag">HAIR SET</span><span class="gi-title">振袖 × アップヘアセット</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/pexels-kristina-polianskaia-2617447-4241707.jpg" alt="メンズツーブロック">
+          <div class="gi-cap"><span class="gi-tag">MENS</span><span class="gi-title">ツーブロック × ハイライト</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/pexels-joon-tae-kim-72545476-8586713.jpg" alt="メンズパーマ">
+          <div class="gi-cap"><span class="gi-tag">MENS / PERM</span><span class="gi-title">メンズ ニュアンスパーマ</span></div>
+        </div>
+      </div>
+
+      <p class="center" style="margin-top:50px; color:var(--gray); font-size:0.84rem;">
+        ※ Instagram でも日々のスタイルを発信しています（準備中）。
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--dark cta-band">
+    <div class="container">
+      <p class="section-label">Reservation</p>
+      <h2>あなたに似合うスタイルを<br>一緒に見つけましょう</h2>
+      <p>「こんな風になりたい」のイメージ画像をお持ちいただくとスムーズです。</p>
+      <a href="access.html#reserve" class="btn btn--gold">無料カウンセリング予約</a>
+    </div>
+  </section>
+
+  <div class="pagelinks">
+    <a href="menu.html" class="pagelink"><span class="pl-en">Menu &amp; Price</span><span class="pl-jp">メニュー・料金</span><span class="pl-arrow">→</span></a>
+    <a href="stylist.html" class="pagelink"><span class="pl-en">Stylist</span><span class="pl-jp">スタイリスト紹介</span><span class="pl-arrow">→</span></a>
+    <a href="access.html" class="pagelink"><span class="pl-en">Access</span><span class="pl-jp">アクセス・予約</span><span class="pl-arrow">→</span></a>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-logo">LUMIÈRE</div>
+          <p class="footer-tagline">光のように美しく</p>
+        </div>
+        <nav class="footer-nav">
+          <div><h4>MENU</h4><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="gallery.html">Gallery</a></div>
+          <div><h4>INFO</h4><a href="stylist.html">Stylist</a><a href="access.html">Access</a><a href="access.html#reserve">予約する</a></div>
+        </nav>
+      </div>
+      <p class="footer-copy">© 2026 SALON LUMIÈRE. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

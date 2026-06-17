@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>スタイリスト紹介 | SALON LUMIÈRE</title>
+  <meta name="description" content="SALON LUMIÈREのスタイリスト紹介。パリ・ロンドンでの研鑽を積んだ実力派スタイリストがあなたの美をプロデュースします。">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav solid">
+    <a href="index.html" class="nav-logo">LUMIÈRE</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="stylist.html" class="active">Stylist</a>
+      <a href="access.html">Access</a>
+      <a href="access.html#reserve" class="nav-btn">予約する</a>
+    </div>
+    <button class="nav-burger" onclick="toggleMenu()">&#9776;</button>
+  </nav>
+  <div class="nav-mobile" id="mobileMenu">
+    <button class="nav-mobile-close" onclick="toggleMenu()">✕</button>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="stylist.html" class="active">Stylist</a>
+    <a href="access.html">Access</a>
+    <a href="access.html#reserve">予約する</a>
+  </div>
+
+  <header class="page-hero">
+    <div class="page-hero-inner">
+      <span class="ph-en">Our Stylists</span>
+      <h1>Stylist</h1>
+      <p class="ph-jp">スタイリスト紹介</p>
+      <p class="breadcrumb"><a href="index.html">Home</a> ／ Stylist</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <p class="section-label center">Meet the Team</p>
+      <h2 class="section-title center">技術と感性で、<br>あなたの「なりたい」を叶えます</h2>
+      <div class="staff-grid">
+
+        <article class="staff-card">
+          <div class="staff-photo-wrap">
+            <img src="images/st3.jpg" alt="スタイリスト 田中 美咲">
+            <a class="staff-insta" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </div>
+          <div class="staff-body">
+            <span class="staff-name-en">Misaki Tanaka</span>
+            <h3>田中 美咲</h3>
+            <p class="staff-role">トップスタイリスト / ディレクター</p>
+            <p class="staff-bio">パリ・ロンドンでの修行を経て帰国。カラーリングの第一人者として雑誌掲載多数。骨格と髪質を見極めた似合わせデザインに定評があります。</p>
+            <div class="staff-tags"><span>カラー</span><span>ハイライト</span><span>似合わせカット</span></div>
+          </div>
+        </article>
+
+        <article class="staff-card">
+          <div class="staff-photo-wrap">
+            <img src="images/st5.jpg" alt="スタイリスト 山田 健太">
+            <a class="staff-insta" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </div>
+          <div class="staff-body">
+            <span class="staff-name-en">Kenta Yamada</span>
+            <h3>山田 健太</h3>
+            <p class="staff-role">シニアスタイリスト</p>
+            <p class="staff-bio">メンズスタイルのスペシャリスト。ビジネスマンからアーティストまで幅広く対応。フェードカットやニュアンスパーマが得意です。</p>
+            <div class="staff-tags"><span>メンズカット</span><span>パーマ</span><span>フェード</span></div>
+          </div>
+        </article>
+
+        <article class="staff-card">
+          <div class="staff-photo-wrap">
+            <img src="images/st1.jpg" alt="スタイリスト 佐藤 麻衣">
+            <a class="staff-insta" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </div>
+          <div class="staff-body">
+            <span class="staff-name-en">Mai Sato</span>
+            <h3>佐藤 麻衣</h3>
+            <p class="staff-role">カラースペシャリスト</p>
+            <p class="staff-bio">繊細な色彩感覚で人気No.1のカラリスト。透明感のあるトレンドカラーやデザインカラーが得意。ダメージケアにもこだわります。</p>
+            <div class="staff-tags"><span>デザインカラー</span><span>ブリーチ</span><span>髪質改善</span></div>
+          </div>
+        </article>
+
+        <article class="staff-card">
+          <div class="staff-photo-wrap">
+            <img src="images/st6.jpg" alt="スタイリスト 小林 優香">
+            <a class="staff-insta" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </div>
+          <div class="staff-body">
+            <span class="staff-name-en">Yuka Kobayashi</span>
+            <h3>小林 優香</h3>
+            <p class="staff-role">スタイリスト / 着付け師</p>
+            <p class="staff-bio">成人式や結婚式のヘアセット・着付けを数多く手がける和装のスペシャリスト。華やかで崩れにくい仕上がりが評判です。</p>
+            <div class="staff-tags"><span>ヘアセット</span><span>着付け</span><span>アレンジ</span></div>
+          </div>
+        </article>
+
+        <article class="staff-card">
+          <div class="staff-photo-wrap">
+            <img src="images/st2.jpg" alt="スタイリスト 中村 涼">
+            <a class="staff-insta" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </div>
+          <div class="staff-body">
+            <span class="staff-name-en">Ryo Nakamura</span>
+            <h3>中村 涼</h3>
+            <p class="staff-role">スタイリスト</p>
+            <p class="staff-bio">トレンドに敏感な若手実力派。SNSで話題のスタイルも再現性高く提案。学生さんからの指名も多数です。</p>
+            <div class="staff-tags"><span>トレンドカット</span><span>パーマ</span><span>韓国風</span></div>
+          </div>
+        </article>
+
+        <article class="staff-card">
+          <div class="staff-photo-wrap">
+            <img src="images/st4.jpg" alt="スタイリスト 鈴木 彩">
+            <a class="staff-insta" href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5.5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor" stroke="none"/></svg>
+            </a>
+          </div>
+          <div class="staff-body">
+            <span class="staff-name-en">Aya Suzuki</span>
+            <h3>鈴木 彩</h3>
+            <p class="staff-role">ジュニアスタイリスト</p>
+            <p class="staff-bio">丁寧なカウンセリングと施術で着実に指名を増やす成長株。シャンプー・ヘッドスパの心地よさにもファンが多数です。</p>
+            <div class="staff-tags"><span>カット</span><span>ヘッドスパ</span><span>トリートメント</span></div>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="center" style="margin-top:50px; color:var(--gray); font-size:0.84rem;">
+        ※ 各スタイリストのInstagramは準備中です。アイコンよりInstagramをご覧いただけます。指名予約も承っております。
+      </p>
+    </div>
+  </section>
+
+  <section class="section section--dark cta-band">
+    <div class="container">
+      <p class="section-label">Reservation</p>
+      <h2>指名予約も承ります</h2>
+      <p>お気に入りのスタイリストが見つかったら、ぜひご指名ください。</p>
+      <a href="access.html#reserve" class="btn btn--gold">予約・お問い合わせ</a>
+    </div>
+  </section>
+
+  <div class="pagelinks">
+    <a href="menu.html" class="pagelink"><span class="pl-en">Menu &amp; Price</span><span class="pl-jp">メニュー・料金</span><span class="pl-arrow">→</span></a>
+    <a href="gallery.html" class="pagelink"><span class="pl-en">Gallery</span><span class="pl-jp">施術例ギャラリー</span><span class="pl-arrow">→</span></a>
+    <a href="access.html" class="pagelink"><span class="pl-en">Access</span><span class="pl-jp">アクセス・予約</span><span class="pl-arrow">→</span></a>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-logo">LUMIÈRE</div>
+          <p class="footer-tagline">光のように美しく</p>
+        </div>
+        <nav class="footer-nav">
+          <div><h4>MENU</h4><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="gallery.html">Gallery</a></div>
+          <div><h4>INFO</h4><a href="stylist.html">Stylist</a><a href="access.html">Access</a><a href="access.html#reserve">予約する</a></div>
+        </nav>
+      </div>
+      <p class="footer-copy">© 2026 SALON LUMIÈRE. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お品書き | おでん ゑびす</title>
+    <meta name="description" content="おでん ゑびすのお品書き。秘伝の出汁で炊いた定番から特撰の種、季節の一品、地酒まで。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700&family=Zen+Old+Mincho:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header header--solid" id="header">
+        <a href="index.html" class="brand">
+            <span class="noren">ゑ</span>
+            <span class="logo">おでん ゑびす<small>SINCE 1962</small></span>
+        </a>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">本店</a></li>
+                <li><a href="story.html">お店のこと</a></li>
+                <li><a href="menu.html" class="on">お品書き</a></li>
+                <li><a href="access.html">店舗情報</a></li>
+                <li><a href="reserve.html" class="nav-reserve">ご予約</a></li>
+            </ul>
+        </nav>
+        <button class="burger" onclick="toggleNav()">☰</button>
+    </header>
+    <nav class="spnav" id="spNav">
+        <button class="spclose" onclick="toggleNav()">✕</button>
+        <a href="index.html" onclick="toggleNav()">本店</a>
+        <a href="story.html" onclick="toggleNav()">お店のこと</a>
+        <a href="menu.html" onclick="toggleNav()">お品書き</a>
+        <a href="access.html" onclick="toggleNav()">店舗情報</a>
+        <a href="reserve.html" class="nav-reserve" onclick="toggleNav()">ご予約</a>
+    </nav>
+
+    <header class="page-head">
+        <span class="ph-en">Menu</span>
+        <h1>お品書き</h1>
+        <p class="lead">秘伝の出汁で、ことことと。季節の種を取り揃えております。</p>
+        <p class="crumb"><a href="index.html">本店</a> ／ お品書き</p>
+    </header>
+
+    <main>
+        <!-- 名物・おすすめ（写真付き） -->
+        <section class="section">
+            <div class="wrap fade-in-up">
+                <div class="section-head">
+                    <span class="s-en">Recommendations</span>
+                    <h2>名物・おすすめの種</h2>
+                </div>
+                <div class="dish-grid">
+                    <article class="dish">
+                        <div class="d-img"><img src="images/Gemini_Generated_Image_btwp02btwp02btwp.png" alt="味しみ大根"></div>
+                        <div class="d-body"><div class="d-row"><h3>味しみ大根</h3><span class="d-price">三〇〇円</span></div><p class="d-desc">二日かけて出汁を含ませた一番人気。</p></div>
+                    </article>
+                    <article class="dish">
+                        <div class="d-img"><img src="images/Gemini_Generated_Image_p32byap32byap32b.png" alt="黄金味玉"></div>
+                        <div class="d-body"><div class="d-row"><h3>黄金味玉</h3><span class="d-price">二〇〇円</span></div><p class="d-desc">半熟の黄身に出汁が染みた逸品。</p></div>
+                    </article>
+                    <article class="dish">
+                        <div class="d-img"><img src="images/Gemini_Generated_Image_kk0swukk0swukk0s.png" alt="牛すじ煮込み"></div>
+                        <div class="d-body"><div class="d-row"><h3>牛すじ煮込み</h3><span class="d-price">五〇〇円</span></div><p class="d-desc">とろけるまで煮込んだ自慢の一品。</p></div>
+                    </article>
+                    <article class="dish">
+                        <div class="d-img"><img src="images/pexels-gu-ko-2150570603-37332334.jpg" alt="もち巾着"></div>
+                        <div class="d-body"><div class="d-row"><h3>もち巾着</h3><span class="d-price">三〇〇円</span></div><p class="d-desc">お餅を包んだ、出汁じゅわりの福袋。</p></div>
+                    </article>
+                    <article class="dish">
+                        <div class="d-img"><img src="images/pexels-leongsan-35132130.jpg" alt="焼き豆腐"></div>
+                        <div class="d-body"><div class="d-row"><h3>焼き豆腐</h3><span class="d-price">二〇〇円</span></div><p class="d-desc">香ばしく焼き上げ、薬味を添えて。</p></div>
+                    </article>
+                    <article class="dish">
+                        <div class="d-img"><img src="images/rochelle-lee-Ri87EgknV88-unsplash.jpg" alt="おまかせ盛り"></div>
+                        <div class="d-body"><div class="d-row"><h3>おまかせ盛り</h3><span class="d-price">一二〇〇円</span></div><p class="d-desc">季節の種を彩りよく五品。迷ったらこちら。</p></div>
+                    </article>
+                    <article class="dish">
+                        <div class="d-img"><img src="images/Gemini_Generated_Image_jb1e1ljb1e1ljb1e.png" alt="じゃがバター"></div>
+                        <div class="d-body"><div class="d-row"><h3>じゃがバター</h3><span class="d-price">四〇〇円</span></div><p class="d-desc">ほくほくのじゃがいもに自家製バターを。</p></div>
+                    </article>
+                    <article class="dish">
+                        <div class="d-img"><img src="images/victor-ung-l6QYNJTix6M-unsplash.jpg" alt="〆のおうどん"></div>
+                        <div class="d-body"><div class="d-row"><h3>〆のおうどん</h3><span class="d-price">五〇〇円</span></div><p class="d-desc">おでん出汁で仕上げる、しめの一杯。</p></div>
+                    </article>
+                    <article class="dish">
+                        <div class="d-img"><img src="images/Gemini_Generated_Image_m1ohp3m1ohp3m1oh.png" alt="自家製がんも"></div>
+                        <div class="d-body"><div class="d-row"><h3>自家製がんも</h3><span class="d-price">三五〇円</span></div><p class="d-desc">野菜を練り込んだ、ふんわり手づくり。</p></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 全お品書き（一覧） -->
+        <section class="section section--white">
+            <div class="wrap fade-in-up">
+                <div class="section-head">
+                    <span class="s-en">Full Menu</span>
+                    <h2>お品書き 一覧</h2>
+                </div>
+                <div class="osashidashi">
+                    <div class="shina-category">
+                        <h3 class="category-title">定番 <span class="ct-en">Standard</span></h3>
+                        <ul>
+                            <li><span class="item-name">大根</span><span class="item-price">三〇〇円</span></li>
+                            <li><span class="item-name">玉子</span><span class="item-price">二〇〇円</span></li>
+                            <li><span class="item-name">こんにゃく</span><span class="item-price">一五〇円</span></li>
+                            <li><span class="item-name">結び昆布</span><span class="item-price">一五〇円</span></li>
+                            <li><span class="item-name">ちくわぶ</span><span class="item-price">二五〇円</span></li>
+                            <li><span class="item-name">はんぺん</span><span class="item-price">二五〇円</span></li>
+                            <li><span class="item-name">ちくわ</span><span class="item-price">二〇〇円</span></li>
+                            <li><span class="item-name">さつま揚げ</span><span class="item-price">二五〇円</span></li>
+                        </ul>
+                    </div>
+                    <div class="shina-category">
+                        <h3 class="category-title">特撰 <span class="ct-en">Special</span></h3>
+                        <ul>
+                            <li><span class="item-name">牛すじ煮込み</span><span class="item-price">五〇〇円</span></li>
+                            <li><span class="item-name">自家製がんも</span><span class="item-price">三五〇円</span></li>
+                            <li><span class="item-name">もち巾着</span><span class="item-price">三〇〇円</span></li>
+                            <li><span class="item-name">つみれ</span><span class="item-price">四〇〇円</span></li>
+                            <li><span class="item-name">焼き豆腐</span><span class="item-price">二〇〇円</span></li>
+                            <li><span class="item-name">たこ足</span><span class="item-price">五〇〇円</span></li>
+                            <li><span class="item-name">ロールキャベツ</span><span class="item-price">四〇〇円</span></li>
+                        </ul>
+                    </div>
+                    <div class="shina-category">
+                        <h3 class="category-title">逸品・お食事 <span class="ct-en">A la carte</span></h3>
+                        <ul>
+                            <li><span class="item-name">おまかせ盛り（五種）</span><span class="item-price">一二〇〇円</span></li>
+                            <li><span class="item-name">じゃがバター</span><span class="item-price">四〇〇円</span></li>
+                            <li><span class="item-name">出汁巻き玉子</span><span class="item-price">五〇〇円</span></li>
+                            <li><span class="item-name">香の物盛り合わせ</span><span class="item-price">三五〇円</span></li>
+                            <li><span class="item-name">〆のおうどん</span><span class="item-price">五〇〇円</span></li>
+                            <li><span class="item-name">出汁茶漬け</span><span class="item-price">五五〇円</span></li>
+                        </ul>
+                    </div>
+                    <div class="shina-category">
+                        <h3 class="category-title">お飲み物 <span class="ct-en">Drinks</span></h3>
+                        <ul>
+                            <li><span class="item-name">地酒（各種）</span><span class="item-price">八〇〇円より</span></li>
+                            <li><span class="item-name">熱燗・ぬる燗</span><span class="item-price">六〇〇円より</span></li>
+                            <li><span class="item-name">生ビール</span><span class="item-price">六〇〇円</span></li>
+                            <li><span class="item-name">焼酎（芋・麦）</span><span class="item-price">五〇〇円より</span></li>
+                            <li><span class="item-name">ハイボール</span><span class="item-price">五〇〇円</span></li>
+                            <li><span class="item-name">烏龍茶・ジュース</span><span class="item-price">三〇〇円</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="menu-note">※ 季節により、一部内容が異なる場合がございます。<br>※ 価格はすべて税込みです。お通し（三〇〇円）を頂戴しております。</p>
+            </div>
+        </section>
+
+        <!-- 予約CTA -->
+        <section class="section section--ink">
+            <div class="wrap cta-band fade-in-up">
+                <span class="s-en">Reservation</span>
+                <h2>お席のご予約はこちら</h2>
+                <p>人気の種は早めに売り切れることもございます。ご予約をおすすめいたします。</p>
+                <div class="cta-actions">
+                    <a href="reserve.html" class="btn btn--enji">予約フォームへ</a>
+                </div>
+                <p class="cta-tel">03-0000-0000<small>受付時間 16:00〜22:00（日・祝休）</small></p>
+            </div>
+        </section>
+    </main>
+
+    <nav class="pagelinks">
+        <a href="story.html" class="pagelink"><span class="pl-en">Story</span><span class="pl-jp">お店のこと</span></a>
+        <a href="access.html" class="pagelink"><span class="pl-en">Access</span><span class="pl-jp">店舗情報</span></a>
+        <a href="reserve.html" class="pagelink"><span class="pl-en">Reservation</span><span class="pl-jp">ご予約</span></a>
+    </nav>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <p class="fb-logo">おでん ゑびす</p>
+                <p>創業六十余年。秘伝の出汁と季節の種で、心温まるひとときをお届けいたします。</p>
+            </div>
+            <nav class="footer-nav">
+                <div><h4>MENU</h4><a href="index.html">本店</a><a href="story.html">お店のこと</a><a href="menu.html">お品書き</a></div>
+                <div><h4>INFO</h4><a href="access.html">店舗情報</a><a href="reserve.html">ご予約</a></div>
+            </nav>
+        </div>
+        <p class="copyright">&copy; 2026 Oden Yebisu. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

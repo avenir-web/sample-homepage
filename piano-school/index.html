@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ぴあのスタジオ メロディ | 武蔵野市の楽しいピアノ教室</title>
+  <meta name="description" content="武蔵野市吉祥寺のピアノ教室。3歳から大人・シニアまで。音楽が大好きになる、楽しいレッスン。無料体験受付中！">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=M+PLUS+Rounded+1c:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ナビ -->
+  <header class="nav" id="nav">
+    <a href="#top" class="nav-logo">
+      <span class="logo-mark">♪</span>
+      <span class="logo-name">ぴあのスタジオ<b>メロディ</b></span>
+    </a>
+    <nav class="nav-menu">
+      <a href="#about">教室紹介</a>
+      <a href="#course">コース</a>
+      <a href="#teacher">先生</a>
+      <a href="#voice">みんなの声</a>
+      <a href="#access">アクセス</a>
+    </nav>
+    <a href="#trial" class="nav-cta">無料体験 ♪</a>
+    <button class="nav-burger" onclick="toggleNav()">☰</button>
+  </header>
+  <div class="sp-menu" id="spMenu">
+    <button class="sp-close" onclick="toggleNav()">✕</button>
+    <a href="#about" onclick="toggleNav()">教室紹介</a>
+    <a href="#course" onclick="toggleNav()">コース</a>
+    <a href="#teacher" onclick="toggleNav()">先生</a>
+    <a href="#voice" onclick="toggleNav()">みんなの声</a>
+    <a href="#access" onclick="toggleNav()">アクセス</a>
+    <a href="#trial" onclick="toggleNav()" class="sp-cta">無料体験 ♪</a>
+  </div>
+
+  <!-- ヒーロー -->
+  <section class="hero" id="top">
+    <span class="blob blob-a"></span>
+    <span class="blob blob-b"></span>
+    <span class="blob blob-c"></span>
+    <span class="deco-note dn1">♪</span>
+    <span class="deco-note dn2">♫</span>
+    <span class="deco-note dn3">♬</span>
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <span class="hero-pill">🎹 武蔵野市・吉祥寺のピアノ教室</span>
+        <h1>ピアノって、<br><span class="marker">こんなに楽しい！</span></h1>
+        <p>3歳のお子さまから大人・シニアの方まで。<br>「弾けた！」の笑顔があふれる、わくわくピアノ教室です。</p>
+        <div class="hero-btns">
+          <a href="#trial" class="btn btn-pink">無料体験レッスンへ ♪</a>
+          <a href="#course" class="btn btn-ghost">コースを見る</a>
+        </div>
+        <div class="hero-badges">
+          <span>🎈 3歳〜OK</span>
+          <span>🎓 音大卒の先生</span>
+          <span>🎵 発表会あり</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="photo-frame photo-hero is-photo"><img src="images/jordan-whitfield-BhfE1IgcsA8-unsplash.jpg" alt="ピアノを弾く手元（YAMAHAピアノ）"></div>
+        <div class="sticker sticker-1">体験<br>無料！</div>
+        <div class="sticker sticker-2">♪</div>
+      </div>
+    </div>
+    <div class="hero-keyboard">
+      <span></span><span class="b"></span><span></span><span class="b"></span><span></span><span></span><span class="b"></span><span></span><span class="b"></span><span></span><span class="b"></span><span></span>
+    </div>
+  </section>
+
+  <!-- 特徴ストリップ -->
+  <section class="features">
+    <div class="feature-item">
+      <div class="fi-icon" style="--c:#ff7a9c">👶</div>
+      <h3>3歳から通える</h3>
+      <p>リトミックで楽しく音感を育てます</p>
+    </div>
+    <div class="feature-item">
+      <div class="fi-icon" style="--c:#ffc43d">🎓</div>
+      <h3>音大卒の先生</h3>
+      <p>経験豊富な専任講師がやさしく指導</p>
+    </div>
+    <div class="feature-item">
+      <div class="fi-icon" style="--c:#3ec6c6">🎹</div>
+      <h3>グランドピアノ</h3>
+      <p>本物の響きでレッスンできます</p>
+    </div>
+    <div class="feature-item">
+      <div class="fi-icon" style="--c:#8a6fe0">🌟</div>
+      <h3>毎年発表会</h3>
+      <p>みんなの「できた！」を舞台で</p>
+    </div>
+  </section>
+
+  <!-- 教室紹介 -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-photos">
+        <div class="photo-frame ap1 is-photo"><img src="images/pexels-charles-parker-6647444.jpg" alt="ピアノを弾く女性"></div>
+        <div class="photo-frame ap2 is-photo"><img src="images/pexels-rdne-10565578.jpg" alt="先生と一緒にピアノを習う子ども"></div>
+        <div class="about-quote">♪ 音楽は<br>心の栄養 ♪</div>
+      </div>
+      <div class="about-text">
+        <span class="sec-label" style="--c:#ff7a9c">About us</span>
+        <h2>「好き」を育てる<br>ピアノ教室です</h2>
+        <p>ぴあのスタジオ メロディは、吉祥寺で2010年に開いたアットホームなピアノ教室。在籍70名以上、地域に愛されて14年になります。</p>
+        <p>私たちがいちばん大切にしているのは「音楽を好きになること」。テクニックより先に、まず「楽しい！」を感じてもらう——それが長く続けられる秘訣だと信じています。</p>
+        <p>コンクールを目指す本格派から、趣味で楽しみたい方、シニアの生きがいづくりまで、一人ひとりのゴールに合わせてレッスンします。</p>
+        <div class="about-stats">
+          <div><b>14</b><span>年の実績</span></div>
+          <div><b>70+</b><span>在籍生徒</span></div>
+          <div><b>3歳〜</b><span>入会年齢</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- コース -->
+  <section class="course" id="course">
+    <div class="course-head">
+      <span class="sec-label center" style="--c:#fff">Course</span>
+      <h2>えらべる4つのコース</h2>
+      <p>年齢や目的に合わせて、ぴったりのコースが見つかります。</p>
+    </div>
+    <div class="course-grid">
+      <article class="course-card" style="--c:#ff7a9c">
+        <div class="cc-photo"><div class="photo-frame is-photo"><img src="images/pexels-lena-ti-2153986577-37833712.jpg" alt="カラフルなハンドベルと鉄琴"></div></div>
+        <span class="cc-age">3〜5歳</span>
+        <h3>プレピアノ<br>（リトミック）</h3>
+        <p>音楽的な感性を育てる幼児クラス。リズム・音感・表現力を遊びながら身につけます。</p>
+        <ul>
+          <li>グループ（4名まで）</li>
+          <li>30分 / 週1回</li>
+          <li>保護者同伴OK</li>
+        </ul>
+        <div class="cc-fee">月謝 ¥6,600〜</div>
+      </article>
+      <article class="course-card popular" style="--c:#ffc43d">
+        <span class="cc-ribbon">いちばん人気</span>
+        <div class="cc-photo"><div class="photo-frame is-photo"><img src="images/pexels-0ldpikes-33572873.jpg" alt="発表会でピアノを演奏する女の子"></div></div>
+        <span class="cc-age">6〜18歳</span>
+        <h3>ジュニア<br>ピアノコース</h3>
+        <p>基礎から応用まで体系的に学ぶ個人レッスン。コンクール対策にも対応します。</p>
+        <ul>
+          <li>個人レッスン</li>
+          <li>45分 / 週1回</li>
+          <li>発表会・コンクール参加可</li>
+        </ul>
+        <div class="cc-fee">月謝 ¥8,800〜</div>
+      </article>
+      <article class="course-card" style="--c:#3ec6c6">
+        <div class="cc-photo"><div class="photo-frame is-photo"><img src="images/pexels-geoyul-18631034.jpg" alt="ピアノを楽しむ大人の女性"></div></div>
+        <span class="cc-age">18歳〜</span>
+        <h3>大人の<br>ピアノレッスン</h3>
+        <p>「子どもの頃やりたかった」も大歓迎。好きな曲からマイペースに楽しめます。</p>
+        <ul>
+          <li>個人レッスン</li>
+          <li>50分 / 週1回</li>
+          <li>好きな曲からスタート</li>
+        </ul>
+        <div class="cc-fee">月謝 ¥9,900〜</div>
+      </article>
+      <article class="course-card" style="--c:#8a6fe0">
+        <div class="cc-photo"><div class="photo-frame is-photo"><img src="images/pexels-cottonbro-10251757.jpg" alt="自宅でピアノを弾くシニアの男性"></div></div>
+        <span class="cc-age">60歳〜</span>
+        <h3>シニア<br>ピアノクラス</h3>
+        <p>脳の活性化・生きがい・仲間との交流に。懐かしの名曲も楽しく弾けます。</p>
+        <ul>
+          <li>個人 or グループ選択</li>
+          <li>45分 / 週1回</li>
+          <li>ゆっくりペースで安心</li>
+        </ul>
+        <div class="cc-fee">月謝 ¥7,700〜</div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 先生 -->
+  <section class="teacher" id="teacher">
+    <span class="sec-label center" style="--c:#8a6fe0">Teachers</span>
+    <h2 class="sec-h2 center">やさしい先生たち</h2>
+    <div class="teacher-grid">
+      <article class="teacher-card">
+        <div class="photo-frame tc-photo is-photo"><img src="images/pexels-charles-parker-6647427.jpg" alt="代表講師 中村奈々"></div>
+        <div class="tc-body">
+          <h3>中村 奈々 <span>せんせい</span></h3>
+          <p class="tc-role">代表講師</p>
+          <div class="tc-tags"><span>東京音楽大学卒</span><span>ウィーン留学</span></div>
+          <p class="tc-bio">クラシックから現代曲まで幅広いレパートリー。一人ひとりの個性を大切にする、明るく丁寧な指導が評判です。</p>
+        </div>
+      </article>
+      <article class="teacher-card">
+        <div class="photo-frame tc-photo is-photo"><img src="images/pexels-charles-parker-6647898.jpg" alt="副講師 林由佳"></div>
+        <div class="tc-body">
+          <h3>林 由佳 <span>せんせい</span></h3>
+          <p class="tc-role">副講師</p>
+          <div class="tc-tags"><span>国立音楽大学卒</span><span>保育士資格</span></div>
+          <p class="tc-bio">幼児教育のスペシャリスト。元気いっぱいの指導で、子どもたちに大人気の先生です。</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- スケジュール -->
+  <section class="schedule">
+    <span class="sec-label center" style="--c:#3ec6c6">Schedule</span>
+    <h2 class="sec-h2 center">開講スケジュール</h2>
+    <div class="sch-wrap">
+      <table class="sch-table">
+        <thead>
+          <tr><th>時間</th><th>月</th><th>火</th><th>水</th><th>木</th><th>金</th><th>土</th></tr>
+        </thead>
+        <tbody>
+          <tr><td class="t">9:00〜12:00</td><td>大人</td><td>−</td><td>大人</td><td>−</td><td>大人</td><td>大人</td></tr>
+          <tr><td class="t">14:00〜17:00</td><td>子ども</td><td>子ども</td><td>子ども</td><td>子ども</td><td>子ども</td><td>子ども</td></tr>
+          <tr><td class="t">17:00〜20:00</td><td>子ども</td><td>大人</td><td>−</td><td>大人</td><td>子ども</td><td>シニア</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="sch-note">※ 定休日：日曜・祝日 ／ ご希望の時間帯は個別にご相談ください</p>
+  </section>
+
+  <!-- みんなの声 -->
+  <section class="voice" id="voice">
+    <span class="sec-label center" style="--c:#ff7a9c">Voice</span>
+    <h2 class="sec-h2 center">みんなの声 🎵</h2>
+    <div class="voice-grid">
+      <article class="bubble">
+        <div class="bubble-body">
+          <p>「先生がやさしくて、ピアノが大好きになりました！発表会でエリーゼのためにを弾けてうれしかったです。」</p>
+        </div>
+        <div class="bubble-who">
+          <div class="photo-frame bw-photo is-photo"><img src="images/pexels-vietnamhiddenlight-32345045.jpg" alt="生徒さん"></div>
+          <div><b>Sちゃん</b><span>小学3年生</span></div>
+          <div class="bw-stars">★★★★★</div>
+        </div>
+      </article>
+      <article class="bubble">
+        <div class="bubble-body">
+          <p>「40代でピアノをスタート。先生が焦らせず、マイペースで教えてくださるので楽しく続けられています。」</p>
+        </div>
+        <div class="bubble-who">
+          <div class="photo-frame bw-photo is-photo"><img src="images/pexels-charles-parker-6647917.jpg" alt="生徒さん"></div>
+          <div><b>田中 恵子さん</b><span>42歳</span></div>
+          <div class="bw-stars">★★★★★</div>
+        </div>
+      </article>
+      <article class="bubble">
+        <div class="bubble-body">
+          <p>「退職後の生きがいにシニアクラスへ。仲間と励まし合いながら、脳トレにもなって一石二鳥です！」</p>
+        </div>
+        <div class="bubble-who">
+          <div class="photo-frame bw-photo is-photo"><img src="images/pexels-cottonbro-10251757.jpg" alt="生徒さん"></div>
+          <div><b>鈴木 義雄さん</b><span>67歳</span></div>
+          <div class="bw-stars">★★★★★</div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- 無料体験 -->
+  <section class="trial" id="trial">
+    <span class="blob blob-d"></span>
+    <div class="trial-inner">
+      <div class="trial-left">
+        <span class="sec-label" style="--c:#ffc43d">Free Trial</span>
+        <h2>まずは無料体験<br>レッスンへ ♪</h2>
+        <p>はじめての方も、久しぶりに再開する方も大歓迎。30分の無料レッスンで、教室の雰囲気を感じてください。</p>
+        <ul class="trial-points">
+          <li>体験レッスンは完全無料</li>
+          <li>手ぶらでOK（楽器不要）</li>
+          <li>入会の強制はありません</li>
+          <li>当日のお申し込みも可能</li>
+        </ul>
+      </div>
+      <form class="trial-form" onsubmit="return false;">
+        <div class="fg">
+          <label>お名前（お子さまの場合はお子さまのお名前）<span class="req">必須</span></label>
+          <input type="text" placeholder="山田 花子">
+        </div>
+        <div class="fg">
+          <label>保護者氏名（お子さまの場合）</label>
+          <input type="text" placeholder="山田 太郎">
+        </div>
+        <div class="fg">
+          <label>電話番号 <span class="req">必須</span></label>
+          <input type="tel" placeholder="090-XXXX-XXXX">
+        </div>
+        <div class="fg">
+          <label>ご希望コース</label>
+          <select>
+            <option value="">選んでください</option>
+            <option>プレピアノ（3〜5歳）</option>
+            <option>ジュニアコース（6〜18歳）</option>
+            <option>大人のピアノレッスン</option>
+            <option>シニアクラス</option>
+          </select>
+        </div>
+        <div class="fg">
+          <label>ご希望日時</label>
+          <input type="text" placeholder="〇月〇日（〇）午後2時ごろ">
+        </div>
+        <button type="submit" class="btn btn-yellow full">無料体験を申し込む ♪</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- アクセス -->
+  <section class="access" id="access">
+    <span class="sec-label center" style="--c:#3ec6c6">Access</span>
+    <h2 class="sec-h2 center">アクセス</h2>
+    <div class="access-inner">
+      <div class="access-map">📍 Google Map 埋め込みスペース</div>
+      <div class="access-info">
+        <div class="ai"><b>住所</b><p>東京都武蔵野市吉祥寺本町2-XX-XX 吉祥寺音楽ビル3F</p></div>
+        <div class="ai"><b>アクセス</b><p>JR・京王「吉祥寺駅」北口より徒歩5分</p></div>
+        <div class="ai"><b>電話</b><p>0422-XX-XXXX</p></div>
+        <div class="ai"><b>開講日時</b><p>月〜土 9:00〜20:00（日曜・祝日休み）</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-note">♪ ♫ ♬ ♪ ♫ ♬ ♪ ♫ ♬ ♪ ♫ ♬ ♪ ♫ ♬</div>
+    <p class="footer-logo">ぴあのスタジオ メロディ</p>
+    <nav class="footer-links">
+      <a href="#about">教室紹介</a>
+      <a href="#course">コース</a>
+      <a href="#teacher">先生</a>
+      <a href="#access">アクセス</a>
+      <a href="#trial">無料体験</a>
+    </nav>
+    <p class="footer-copy">© 2026 ぴあのスタジオ メロディ</p>
+  </footer>
+
+  <script>
+    function toggleNav(){ document.getElementById('spMenu').classList.toggle('open'); }
+    document.querySelectorAll('a[href^="#"]').forEach(function(a){
+      a.addEventListener('click', function(e){
+        var href = a.getAttribute('href');
+        if(href==='#') return;
+        e.preventDefault();
+        var t = document.querySelector(href);
+        if(t) t.scrollIntoView({behavior:'smooth'});
+      });
+    });
+    window.addEventListener('scroll', function(){
+      document.getElementById('nav').classList.toggle('scrolled', window.scrollY>40);
+    });
+  </script>
+</body>
+</html>

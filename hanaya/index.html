@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>花日和 hanabiyori｜鎌倉・由比ヶ浜のちいさな花屋</title>
+  <meta name="description" content="鎌倉・由比ヶ浜のちいさな花屋「花日和」。季節の花束・ブーケ・ギフト・ワークショップ。暮らしに花のある時間を、手づくりの温かさとともに。">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Kaisei+Decol:wght@400;500&family=Yomogi&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header class="head">
+    <div class="head-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-icon">🌷</span>
+        <span class="brand-text"><span class="b-jp">花日和</span><span class="b-en">hanabiyori</span></span>
+      </a>
+      <nav class="gnav">
+        <a href="index.html" class="on">ホーム</a>
+        <a href="about.html">お店のこと</a>
+        <a href="flowers.html">花とギフト</a>
+        <a href="blog.html">花日記</a>
+        <a href="access.html">アクセス</a>
+        <a href="access.html#order" class="nav-order">ご注文</a>
+      </nav>
+      <button class="burger" onclick="toggleNav()">☰</button>
+    </div>
+  </header>
+  <nav class="spnav" id="spNav">
+    <button class="spclose" onclick="toggleNav()">✕</button>
+    <a href="index.html" onclick="toggleNav()">ホーム</a>
+    <a href="about.html" onclick="toggleNav()">お店のこと</a>
+    <a href="flowers.html" onclick="toggleNav()">花とギフト</a>
+    <a href="blog.html" onclick="toggleNav()">花日記</a>
+    <a href="access.html" onclick="toggleNav()">アクセス</a>
+    <a href="access.html#order" class="nav-order" onclick="toggleNav()">ご注文</a>
+  </nav>
+
+  <!-- ヒーロー -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <span class="label">Welcome to our shop</span>
+        <h1>暮らしに、<br><span class="mk">花のある時間</span>を。</h1>
+        <p>鎌倉・由比ヶ浜のちいさな花屋「花日和（はなびより）」。毎朝市場から届く季節の花を、ひとつひとつ手で束ねています。今日のあなたに似合う一束を、どうぞ。</p>
+        <div class="hero-btns">
+          <a href="flowers.html" class="btn btn--terra">花を見にいく 🌿</a>
+          <a href="blog.html" class="btn btn--outline">店主の花日記</a>
+        </div>
+      </div>
+      <div class="hero-collage">
+        <figure class="snap hc1 tilt-l"><span class="tape"></span><img src="images/02-angelina-jollivet-mNEpmNiFdXs-unsplash.jpg" alt="オレンジ系の花束"><figcaption>今日のおすすめ</figcaption></figure>
+        <figure class="snap hc2 tilt-r"><img src="images/29-shche_-team-hY6mzHREM8I-unsplash.jpg" alt="手渡しのブーケ"><figcaption>贈り物に</figcaption></figure>
+        <figure class="snap hc3 tilt-l"><img src="images/20-pexels-lena-ti-2153986577-36539702.jpg" alt="チューリップの花束"><figcaption>季節の花</figcaption></figure>
+        <div class="hero-stamp">Since<br>2015</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 約束 -->
+  <section class="section section--craft">
+    <div class="wrap">
+      <div class="promise-grid">
+        <div class="promise">
+          <span class="promise-ico">🌅</span>
+          <h3>毎朝の仕入れ</h3>
+          <p>市場から届くいちばん元気な花だけを。だから、長く楽しめます。</p>
+        </div>
+        <div class="promise">
+          <span class="promise-ico">✋</span>
+          <h3>手づくりの一束</h3>
+          <p>ご予算とご希望をうかがって、その場でひとつずつお作りします。</p>
+        </div>
+        <div class="promise">
+          <span class="promise-ico">💌</span>
+          <h3>気持ちを添えて</h3>
+          <p>メッセージカードやラッピングも、心を込めて。手渡しできる花束を。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 商品抜粋 -->
+  <section class="section">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:48px;">
+        <span class="label center both">Today's flowers</span>
+        <h2 class="sec-title center">きょうの花、いろいろ</h2>
+      </div>
+      <div class="pick-grid">
+        <div class="pick">
+          <figure class="snap snap--plain tilt-l"><img src="images/04-chaewon-lee-Df4bIoLSJCs-unsplash.jpg" alt="パステルブーケ"></figure>
+          <h3>季節のミニブーケ</h3>
+          <span class="pick-price">¥1,200〜</span>
+        </div>
+        <div class="pick">
+          <figure class="snap snap--plain tilt-r"><img src="images/01-aleksandra-sapozhnikova-asQ3m8WtBDc-unsplash.jpg" alt="バラのブーケ"></figure>
+          <h3>おまかせブーケ</h3>
+          <span class="pick-price">¥2,000〜</span>
+        </div>
+        <div class="pick">
+          <figure class="snap snap--plain tilt-l"><img src="images/03-brigitte-tohm-0utRJ1mZoZg-unsplash.jpg" alt="芍薬のアレンジ"></figure>
+          <h3>花瓶アレンジ</h3>
+          <span class="pick-price">¥3,500〜</span>
+        </div>
+        <div class="pick">
+          <figure class="snap snap--plain tilt-r"><img src="images/16-pexels-fj-robertson-36098874-35120056.jpg" alt="ドライフラワー"></figure>
+          <h3>ドライフラワー</h3>
+          <span class="pick-price">¥1,800〜</span>
+        </div>
+      </div>
+      <p class="center" style="margin-top:44px;"><a href="flowers.html" class="btn btn--sage">花とギフトをすべて見る →</a></p>
+    </div>
+  </section>
+
+  <!-- 店主より -->
+  <section class="section section--craft">
+    <div class="wrap about-hero">
+      <div class="about-photos">
+        <figure class="snap a1 tilt-l"><span class="tape"></span><img src="images/06-golden-horn-bridge-VxtnLr6tBX4-unsplash.jpg" alt="店主"><figcaption>店主のあかりです</figcaption></figure>
+        <figure class="snap a2 tilt-r"><img src="images/22-pexels-nguyendesigner-37486122.jpg" alt="店内の様子"><figcaption>店内にて</figcaption></figure>
+      </div>
+      <div class="about-text">
+        <span class="label">Hello!</span>
+        <h2>「特別な日」だけじゃなく、<br>なんでもない日にも花を。</h2>
+        <p>はじめまして、花日和の小川あかりです。パリで花を学んだあと、生まれ育った鎌倉でこの小さなお店をはじめました。</p>
+        <p>花を買うのは、誕生日や記念日だけ——そんな風に思っていませんか？ 一輪挿しにそっと飾るだけで、いつもの部屋がやさしく変わります。そんな「花のある暮らし」を、もっと身近に感じてもらえたら嬉しいです。</p>
+        <a href="about.html" class="btn btn--terra">お店のことをもっと見る</a>
+        <p class="about-sign">Akari Ogawa</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ブログ抜粋 -->
+  <section class="section">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:48px;">
+        <span class="label center both">From the journal</span>
+        <h2 class="sec-title center">店主の花日記</h2>
+      </div>
+      <div class="pick-grid">
+        <a class="pick" href="blog-single.html">
+          <figure class="snap snap--plain tilt-l"><img src="images/14-pexels-couleur-14237973.jpg" alt="海辺の花"></figure>
+          <h3 style="margin-bottom:2px;">6月の花、紫陽花のこと</h3>
+          <span class="pick-price" style="font-size:1rem;">2026.06.10</span>
+        </a>
+        <a class="pick" href="blog.html">
+          <figure class="snap snap--plain tilt-r"><img src="images/08-molly-e-bossardt-zrS5F72-mTI-unsplash.jpg" alt="アネモネ"></figure>
+          <h3 style="margin-bottom:2px;">花を長持ちさせるコツ</h3>
+          <span class="pick-price" style="font-size:1rem;">2026.05.28</span>
+        </a>
+        <a class="pick" href="blog.html">
+          <figure class="snap snap--plain tilt-l"><img src="images/16-pexels-fj-robertson-36098874-35120056.jpg" alt="ドライフラワー"></figure>
+          <h3 style="margin-bottom:2px;">ワークショップを開きました</h3>
+          <span class="pick-price" style="font-size:1rem;">2026.05.15</span>
+        </a>
+        <a class="pick" href="blog.html">
+          <figure class="snap snap--plain tilt-r"><img src="images/10-pexels-andy-lee-222330306-37373383.jpg" alt="白いブーケ"></figure>
+          <h3 style="margin-bottom:2px;">父の日におすすめの花</h3>
+          <span class="pick-price" style="font-size:1rem;">2026.06.05</span>
+        </a>
+      </div>
+      <p class="center" style="margin-top:44px;"><a href="blog.html" class="btn btn--outline">花日記をすべて読む →</a></p>
+    </div>
+  </section>
+
+  <!-- ページ送り -->
+  <section class="section section--craft">
+    <div class="wrap">
+      <div class="morelinks">
+        <a href="about.html" class="morelink"><span class="ml-ico">🏡</span><span class="ml-en">About</span><span class="ml-jp">お店のこと</span></a>
+        <a href="flowers.html" class="morelink"><span class="ml-ico">💐</span><span class="ml-en">Flowers</span><span class="ml-jp">花とギフト</span></a>
+        <a href="blog.html" class="morelink"><span class="ml-ico">📔</span><span class="ml-en">Journal</span><span class="ml-jp">花日記</span></a>
+        <a href="access.html" class="morelink"><span class="ml-ico">📍</span><span class="ml-en">Access</span><span class="ml-jp">アクセス・ご注文</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot-top">
+        <div class="foot-brand">
+          <span class="fb-jp">花日和</span> <span class="fb-en">hanabiyori</span>
+          <p>鎌倉・由比ヶ浜のちいさな花屋。暮らしに花のある時間を、手づくりの温かさとともに。</p>
+        </div>
+        <div class="foot-col">
+          <h4>Menu</h4>
+          <a href="index.html">ホーム</a>
+          <a href="about.html">お店のこと</a>
+          <a href="flowers.html">花とギフト</a>
+          <a href="blog.html">花日記</a>
+        </div>
+        <div class="foot-col">
+          <h4>Shop</h4>
+          <a href="access.html">アクセス</a>
+          <a href="access.html#order">ご注文・お問い合わせ</a>
+          <a href="#">Instagram（準備中）</a>
+        </div>
+      </div>
+      <p class="foot-copy">© 2026 花日和 hanabiyori, Kamakura.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

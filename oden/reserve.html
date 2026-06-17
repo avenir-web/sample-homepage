@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ご予約 | おでん ゑびす</title>
+    <meta name="description" content="おでん ゑびすのご予約フォーム（サンプル）。お席のご予約を承っております。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;500;700&family=Zen+Old+Mincho:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header header--solid" id="header">
+        <a href="index.html" class="brand">
+            <span class="noren">ゑ</span>
+            <span class="logo">おでん ゑびす<small>SINCE 1962</small></span>
+        </a>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">本店</a></li>
+                <li><a href="story.html">お店のこと</a></li>
+                <li><a href="menu.html">お品書き</a></li>
+                <li><a href="access.html">店舗情報</a></li>
+                <li><a href="reserve.html" class="nav-reserve">ご予約</a></li>
+            </ul>
+        </nav>
+        <button class="burger" onclick="toggleNav()">☰</button>
+    </header>
+    <nav class="spnav" id="spNav">
+        <button class="spclose" onclick="toggleNav()">✕</button>
+        <a href="index.html" onclick="toggleNav()">本店</a>
+        <a href="story.html" onclick="toggleNav()">お店のこと</a>
+        <a href="menu.html" onclick="toggleNav()">お品書き</a>
+        <a href="access.html" onclick="toggleNav()">店舗情報</a>
+        <a href="reserve.html" class="nav-reserve" onclick="toggleNav()">ご予約</a>
+    </nav>
+
+    <header class="page-head">
+        <span class="ph-en">Reservation</span>
+        <h1>ご予約</h1>
+        <p class="lead">下記フォームよりお席のご予約を承ります。お急ぎの場合はお電話にて。</p>
+        <p class="crumb"><a href="index.html">本店</a> ／ ご予約</p>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="wrap">
+                <p class="reserve-intro fade-in-up">
+                    ご希望日時・人数をご入力ください。<br>
+                    内容を確認のうえ、折り返しご連絡を差し上げます（当日のご予約はお電話 03-0000-0000 へ）。
+                </p>
+                <!-- 空席カレンダー -->
+                <div class="cal fade-in-up" id="calendar">
+                    <div class="cal-head">
+                        <button type="button" class="cal-nav" id="calPrev" aria-label="前の月">‹</button>
+                        <span class="cal-title" id="calTitle">　</span>
+                        <button type="button" class="cal-nav" id="calNext" aria-label="次の月">›</button>
+                    </div>
+                    <div class="cal-legend">
+                        <span><b class="lg-o">○</b> 空席あり</span>
+                        <span><b class="lg-t">△</b> 一部時間のみ</span>
+                        <span><b class="lg-x">✕</b> 満席</span>
+                        <span><b class="lg-h">休</b> 定休日</span>
+                    </div>
+                    <div class="cal-grid" id="calGrid"></div>
+                </div>
+
+                <!-- 選択した日の時間枠 -->
+                <div class="slot-box" id="slotBox" style="display:none;">
+                    <p class="slot-head">ご希望時間：<span class="sel-date" id="slotDateLabel"></span></p>
+                    <div class="slot-grid" id="slotGrid"></div>
+                </div>
+
+                <!-- 選択中サマリー -->
+                <div class="sel-summary" id="selSummary">
+                    ご予約日時：<b id="summaryText"></b>
+                </div>
+
+                <form class="reserve-form fade-in-up" onsubmit="return false;">
+                    <input type="hidden" id="selectedDate" name="date">
+                    <input type="hidden" id="selectedTime" name="time">
+                    <div class="fg">
+                        <label>お名前 <span class="req">必須</span></label>
+                        <input type="text" placeholder="例）恵比寿 花子">
+                    </div>
+                    <div class="fg-row">
+                        <div class="fg">
+                            <label>電話番号 <span class="req">必須</span></label>
+                            <input type="tel" placeholder="例）090-0000-0000">
+                        </div>
+                        <div class="fg">
+                            <label>メールアドレス</label>
+                            <input type="email" placeholder="例）hanako@example.com">
+                        </div>
+                    </div>
+                    <div class="fg-row">
+                        <div class="fg">
+                            <label>ご人数 <span class="req">必須</span></label>
+                            <select>
+                                <option value="">選択してください</option>
+                                <option>1名</option>
+                                <option>2名</option>
+                                <option>3名</option>
+                                <option>4名</option>
+                                <option>5名</option>
+                                <option>6名</option>
+                                <option>7〜12名</option>
+                            </select>
+                        </div>
+                        <div class="fg">
+                            <label>お席のご希望</label>
+                            <select>
+                                <option value="">指定なし</option>
+                                <option>カウンター席</option>
+                                <option>お座敷</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="fg">
+                        <label>ご要望・備考</label>
+                        <textarea rows="4" placeholder="アレルギー、記念日のご利用、お祝いのご相談などございましたらご記入ください。"></textarea>
+                    </div>
+                    <p class="form-note">※ こちらはサンプルフォームです。実際の送信は行われません。<br>※ ご予約の確定は、店舗からのご連絡をもって完了とさせていただきます。</p>
+                    <button type="submit" class="reserve-submit">この内容で予約を申し込む</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- 電話予約の案内 -->
+        <section class="section section--ink">
+            <div class="wrap cta-band fade-in-up">
+                <span class="s-en">By Phone</span>
+                <h2>お電話でのご予約</h2>
+                <p>当日のご予約・ご変更、大人数でのご利用はお電話が確実でございます。</p>
+                <p class="cta-tel">03-0000-0000<small>受付時間 16:00〜22:00（日・祝休）</small></p>
+            </div>
+        </section>
+    </main>
+
+    <nav class="pagelinks">
+        <a href="story.html" class="pagelink"><span class="pl-en">Story</span><span class="pl-jp">お店のこと</span></a>
+        <a href="menu.html" class="pagelink"><span class="pl-en">Menu</span><span class="pl-jp">お品書き</span></a>
+        <a href="access.html" class="pagelink"><span class="pl-en">Access</span><span class="pl-jp">店舗情報</span></a>
+    </nav>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <p class="fb-logo">おでん ゑびす</p>
+                <p>創業六十余年。秘伝の出汁と季節の種で、心温まるひとときをお届けいたします。</p>
+            </div>
+            <nav class="footer-nav">
+                <div><h4>MENU</h4><a href="index.html">本店</a><a href="story.html">お店のこと</a><a href="menu.html">お品書き</a></div>
+                <div><h4>INFO</h4><a href="access.html">店舗情報</a><a href="reserve.html">ご予約</a></div>
+            </nav>
+        </div>
+        <p class="copyright">&copy; 2026 Oden Yebisu. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

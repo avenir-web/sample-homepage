@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>アクセス・ご注文｜花日和 hanabiyori</title>
+  <meta name="description" content="花日和（鎌倉・由比ヶ浜）のアクセス・営業時間・ご注文方法。店頭・お電話・フォームより承ります。">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Kaisei+Decol:wght@400;500&family=Yomogi&family=Zen+Maru+Gothic:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="head">
+    <div class="head-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-icon">🌷</span>
+        <span class="brand-text"><span class="b-jp">花日和</span><span class="b-en">hanabiyori</span></span>
+      </a>
+      <nav class="gnav">
+        <a href="index.html">ホーム</a>
+        <a href="about.html">お店のこと</a>
+        <a href="flowers.html">花とギフト</a>
+        <a href="blog.html">花日記</a>
+        <a href="access.html" class="on">アクセス</a>
+        <a href="#order" class="nav-order">ご注文</a>
+      </nav>
+      <button class="burger" onclick="toggleNav()">☰</button>
+    </div>
+  </header>
+  <nav class="spnav" id="spNav">
+    <button class="spclose" onclick="toggleNav()">✕</button>
+    <a href="index.html" onclick="toggleNav()">ホーム</a>
+    <a href="about.html" onclick="toggleNav()">お店のこと</a>
+    <a href="flowers.html" onclick="toggleNav()">花とギフト</a>
+    <a href="blog.html" onclick="toggleNav()">花日記</a>
+    <a href="access.html" onclick="toggleNav()">アクセス</a>
+    <a href="#order" class="nav-order" onclick="toggleNav()">ご注文</a>
+  </nav>
+
+  <div class="page-title">
+    <span class="pt-en">Access &amp; Order</span>
+    <h1>アクセス・ご注文</h1>
+    <p class="crumb"><a href="index.html">ホーム</a> ／ アクセス・ご注文</p>
+  </div>
+
+  <!-- アクセス -->
+  <section class="section" style="padding-top:30px;">
+    <div class="wrap access-grid">
+      <div class="map-frame">📍 Google Map 埋め込みスペース<br>（由比ヶ浜）</div>
+      <div>
+        <span class="label">Shop info</span>
+        <h2 class="sec-title" style="margin-bottom:24px;">お店の情報</h2>
+        <dl class="info-dl">
+          <div><dt>店名</dt><dd>花日和 hanabiyori</dd></div>
+          <div><dt>住所</dt><dd>神奈川県鎌倉市由比ガ浜3-XX-XX</dd></div>
+          <div><dt>電話</dt><dd>0467-XX-XXXX</dd></div>
+          <div><dt>営業時間</dt><dd>火〜土 9:00〜18:30 ／ 日 10:00〜16:00</dd></div>
+          <div><dt>定休日</dt><dd>毎週月曜日</dd></div>
+          <div><dt>最寄駅</dt><dd>江ノ電「由比ヶ浜駅」より徒歩3分<br>JR「鎌倉駅」より徒歩15分</dd></div>
+          <div><dt>お支払い</dt><dd>現金・各種カード・電子マネー・QR決済</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- 店内・店先の写真 -->
+  <section class="section section--craft">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:40px;">
+        <span class="label center both">Our shop</span>
+        <h2 class="sec-title center">お店の様子</h2>
+      </div>
+      <div class="pick-grid">
+        <figure class="snap snap--plain tilt-l"><img src="images/26-pexels-sura-faris-1023767795-32506316.jpg" alt="店先"></figure>
+        <figure class="snap snap--plain tilt-r"><img src="images/19-pexels-khadija-qasanova-376394062-20295105.jpg" alt="店頭の花"></figure>
+        <figure class="snap snap--plain tilt-l"><img src="images/22-pexels-nguyendesigner-37486122.jpg" alt="店内"></figure>
+        <figure class="snap snap--plain tilt-r"><img src="images/09-paulina-ponce-P4z15DCQ8-I-unsplash.jpg" alt="色とりどりの花"></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ご注文方法 -->
+  <section class="section" id="order">
+    <div class="wrap">
+      <div class="center" style="margin-bottom:40px;">
+        <span class="label center both">How to order</span>
+        <h2 class="sec-title center">ご注文方法</h2>
+        <p style="color:var(--brown-soft);font-size:0.9rem;margin-top:10px;">ご用途・ご予算・お渡し希望日をお知らせください。2営業日以内にご返信します。</p>
+      </div>
+      <div class="order-ways">
+        <div class="order-way">
+          <span class="ico">🏪</span>
+          <h3>店頭で</h3>
+          <p>いちばんおすすめ。実際の花を見ながらご相談いただけます。</p>
+        </div>
+        <div class="order-way">
+          <span class="ico">📞</span>
+          <h3>お電話で</h3>
+          <p>0467-XX-XXXX<br>営業時間内に承ります。当日のご相談も。</p>
+        </div>
+        <div class="order-way">
+          <span class="ico">✉️</span>
+          <h3>フォームで</h3>
+          <p>下記フォームよりご連絡ください。画像の添付もOKです。</p>
+        </div>
+      </div>
+
+      <!-- フォーム -->
+      <form class="order-form" onsubmit="return false;">
+        <div class="form-row">
+          <div class="fg"><label>お名前 <span class="req">必須</span></label><input type="text" placeholder="鈴木 花子"></div>
+          <div class="fg"><label>メールアドレス <span class="req">必須</span></label><input type="email" placeholder="example@email.com"></div>
+        </div>
+        <div class="form-row">
+          <div class="fg"><label>電話番号</label><input type="tel" placeholder="090-XXXX-XXXX"></div>
+          <div class="fg">
+            <label>ご用途</label>
+            <select>
+              <option value="">選択してください</option>
+              <option>誕生日</option>
+              <option>記念日・お祝い</option>
+              <option>開店・開業祝い</option>
+              <option>お供え・法事</option>
+              <option>ウェディングブーケ</option>
+              <option>ワークショップ</option>
+              <option>店舗・法人装花</option>
+              <option>自宅用・その他</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="fg"><label>ご予算の目安</label><input type="text" placeholder="3,000円ほど"></div>
+          <div class="fg"><label>お渡し希望日</label><input type="text" placeholder="〇月〇日"></div>
+        </div>
+        <div class="fg"><label>ご希望・ご相談内容</label><textarea rows="4" placeholder="白〜グリーン系でやさしい雰囲気にしてほしいです。手提げ袋もお願いします。"></textarea></div>
+        <button type="submit" class="order-btn">この内容で送信する 🌿</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot-top">
+        <div class="foot-brand">
+          <span class="fb-jp">花日和</span> <span class="fb-en">hanabiyori</span>
+          <p>鎌倉・由比ヶ浜のちいさな花屋。暮らしに花のある時間を、手づくりの温かさとともに。</p>
+        </div>
+        <div class="foot-col"><h4>Menu</h4><a href="index.html">ホーム</a><a href="about.html">お店のこと</a><a href="flowers.html">花とギフト</a><a href="blog.html">花日記</a></div>
+        <div class="foot-col"><h4>Shop</h4><a href="access.html">アクセス</a><a href="access.html#order">ご注文・お問い合わせ</a><a href="#">Instagram（準備中）</a></div>
+      </div>
+      <p class="foot-copy">© 2026 花日和 hanabiyori, Kamakura.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

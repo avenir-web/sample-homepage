@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>メニュー・料金 | SALON LUMIÈRE</title>
+  <meta name="description" content="SALON LUMIÈREのメニュー・料金一覧。カット・カラー・パーマ・ストレート・トリートメント・ヘッドスパ・ヘアセット・着付け・メンズメニューまで。">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Noto+Serif+JP:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="nav solid">
+    <a href="index.html" class="nav-logo">LUMIÈRE</a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="stylist.html">Stylist</a>
+      <a href="access.html">Access</a>
+      <a href="access.html#reserve" class="nav-btn">予約する</a>
+    </div>
+    <button class="nav-burger" onclick="toggleMenu()">&#9776;</button>
+  </nav>
+  <div class="nav-mobile" id="mobileMenu">
+    <button class="nav-mobile-close" onclick="toggleMenu()">✕</button>
+    <a href="index.html">Home</a>
+    <a href="menu.html" class="active">Menu</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="stylist.html">Stylist</a>
+    <a href="access.html">Access</a>
+    <a href="access.html#reserve">予約する</a>
+  </div>
+
+  <header class="page-hero">
+    <div class="page-hero-inner">
+      <span class="ph-en">Menu &amp; Price</span>
+      <h1>Menu</h1>
+      <p class="ph-jp">メニュー・料金</p>
+      <p class="breadcrumb"><a href="index.html">Home</a> ／ Menu</p>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+
+      <!-- カット -->
+      <div class="menu-cat">
+        <div class="menu-cat-head"><span class="mch-en">01</span><h2>カット</h2></div>
+        <p class="menu-cat-lead">骨格・髪質・ライフスタイルを診断し、再現性の高いスタイルをご提案します。シャンプー・ブロー込み。</p>
+        <div class="menu-cat-body">
+          <figure class="menu-cat-photo">
+            <img src="images/dwi-agus-prasetiyo-EMeWJb_RuoQ-unsplash.jpg" alt="ボブカットの施術例">
+            <figcaption>施術例：ショートボブ × 裾カラー</figcaption>
+          </figure>
+          <div>
+            <div class="price-row"><div><div class="pr-name">カット<span class="pr-badge">人気</span></div><div class="pr-desc">スタイリスト指名なし。骨格に合わせたカスタムカット。</div></div><div class="pr-price">¥6,600</div></div>
+            <div class="price-row"><div><div class="pr-name">トップスタイリスト指名カット</div><div class="pr-desc">ディレクター・トップスタイリストによる指名カット。</div></div><div class="pr-price">¥8,800</div></div>
+            <div class="price-row"><div><div class="pr-name">学生カット</div><div class="pr-desc">高校生以下対象（学生証提示）。</div></div><div class="pr-price">¥4,950</div></div>
+            <div class="price-row"><div><div class="pr-name">前髪カット</div><div class="pr-desc">来店から1ヶ月以内は無料メンテナンスあり。</div></div><div class="pr-price">¥1,650</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- カラー -->
+      <div class="menu-cat">
+        <div class="menu-cat-head"><span class="mch-en">02</span><h2>カラー</h2></div>
+        <p class="menu-cat-lead">髪へのダメージを最小限に抑えた高品質カラー。透明感のあるトレンドカラーから個性的なデザインカラーまで。カット別。</p>
+        <div class="menu-cat-body">
+          <figure class="menu-cat-photo">
+            <img src="images/jessie-dee-dabrowski-www-jessiedee-net-TETR8YLSqt4-unsplash.jpg" alt="デザインカラーの施術例">
+            <figcaption>施術例：ユニコーンカラー（デザインカラー）</figcaption>
+          </figure>
+          <div>
+            <div class="price-row"><div><div class="pr-name">フルカラー</div><div class="pr-desc">全体染め。透明感のあるトレンドカラー。</div></div><div class="pr-price">¥8,800</div></div>
+            <div class="price-row"><div><div class="pr-name">リタッチカラー</div><div class="pr-desc">根元の伸びた部分のみ（約2cm）。</div></div><div class="pr-price">¥6,600</div></div>
+            <div class="price-row"><div><div class="pr-name">グレイカラー（白髪染め）</div><div class="pr-desc">自然な仕上がりで白髪をしっかりカバー。</div></div><div class="pr-price">¥7,700</div></div>
+            <div class="price-row"><div><div class="pr-name">ハイライト／ローライト<span class="pr-badge">人気</span></div><div class="pr-desc">立体感と動きを演出。外国人風の質感に。</div></div><div class="pr-price">¥13,200</div></div>
+            <div class="price-row"><div><div class="pr-name">デザインカラー（ダブルカラー・裾カラー等）</div><div class="pr-desc">ブリーチ＋オンカラーの2工程。インナーカラーも対応。</div></div><div class="pr-price">¥16,500〜</div></div>
+            <div class="price-row"><div><div class="pr-name">ブリーチ</div><div class="pr-desc">ハイトーンの土台づくり。1回ごと。</div></div><div class="pr-price">¥7,700〜</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- パーマ -->
+      <div class="menu-cat">
+        <div class="menu-cat-head"><span class="mch-en">03</span><h2>パーマ</h2></div>
+        <p class="menu-cat-lead">髪質に合わせた薬剤選定で、ダメージレスに美しいウェーブを。カット別。</p>
+        <div class="menu-cat-body">
+          <figure class="menu-cat-photo">
+            <img src="images/ramon-benitez-netaAK35IUc-unsplash.jpg" alt="パーマの施術例">
+            <figcaption>施術例：ベージュ × ゆるふわウェーブ</figcaption>
+          </figure>
+          <div>
+            <div class="price-row"><div><div class="pr-name">パーマ</div><div class="pr-desc">コールドパーマ。自然なウェーブから強めまで。</div></div><div class="pr-price">¥11,000</div></div>
+            <div class="price-row"><div><div class="pr-name">デジタルパーマ<span class="pr-badge">人気</span></div><div class="pr-desc">乾かすと再現される、持ちの良い立体カール。</div></div><div class="pr-price">¥13,200</div></div>
+            <div class="price-row"><div><div class="pr-name">ポイントパーマ</div><div class="pr-desc">前髪や毛先など部分的に。</div></div><div class="pr-price">¥5,500〜</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ストレート -->
+      <div class="menu-cat">
+        <div class="menu-cat-head"><span class="mch-en">04</span><h2>ストレート・髪質改善</h2></div>
+        <p class="menu-cat-lead">うねりやくせを抑え、扱いやすく艶やかな髪へ。カット別。</p>
+        <div class="menu-cat-body">
+          <figure class="menu-cat-photo">
+            <img src="images/pexels-minan1398-1645901.jpg" alt="ストレートヘアの施術例">
+            <figcaption>施術例：髪質改善 × 艶ストレート</figcaption>
+          </figure>
+          <div>
+            <div class="price-row"><div><div class="pr-name">縮毛矯正</div><div class="pr-desc">強いくせ毛もまっすぐ自然に。根元〜毛先まで。</div></div><div class="pr-price">¥16,500</div></div>
+            <div class="price-row"><div><div class="pr-name">髪質改善ストレート<span class="pr-badge">人気</span></div><div class="pr-desc">酸熱トリートメントでうねりを抑え、艶を引き出す。</div></div><div class="pr-price">¥13,200</div></div>
+            <div class="price-row"><div><div class="pr-name">前髪ストレート</div><div class="pr-desc">気になる前髪のくせのみ。</div></div><div class="pr-price">¥4,400</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- トリートメント -->
+      <div class="menu-cat menu-cat--nophoto">
+        <div class="menu-cat-head"><span class="mch-en">05</span><h2>トリートメント</h2></div>
+        <p class="menu-cat-lead">髪の芯から補修するサロンクオリティのケア。単品・他メニューとの併用どちらも可。</p>
+        <div class="menu-cat-body">
+          <div>
+            <div class="price-row"><div><div class="pr-name">システムトリートメント</div><div class="pr-desc">数種の薬剤を重ねる集中補修。指通りなめらか。</div></div><div class="pr-price">¥4,400</div></div>
+            <div class="price-row"><div><div class="pr-name">髪質改善トリートメント<span class="pr-badge">人気</span></div><div class="pr-desc">続けるほど髪が変わる、ハイグレードな補修ケア。</div></div><div class="pr-price">¥6,600</div></div>
+            <div class="price-row"><div><div class="pr-name">クイックトリートメント</div><div class="pr-desc">カラー・パーマ後の簡易ケア。</div></div><div class="pr-price">¥1,650</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ヘッドスパ -->
+      <div class="menu-cat menu-cat--nophoto">
+        <div class="menu-cat-head"><span class="mch-en">06</span><h2>ヘッドスパ</h2></div>
+        <p class="menu-cat-lead">頭皮環境を整え、髪の健やかな成長をサポート。至福のリラックスタイムを。</p>
+        <div class="menu-cat-body">
+          <div>
+            <div class="price-row"><div><div class="pr-name">クイックスパ（10分）</div><div class="pr-desc">他メニューにプラスで手軽にリフレッシュ。</div></div><div class="pr-price">¥3,300</div></div>
+            <div class="price-row"><div><div class="pr-name">極上ヘッドスパ（30分）<span class="pr-badge">人気</span></div><div class="pr-desc">クレンジング＋マッサージ＋頭皮トリートメント。</div></div><div class="pr-price">¥5,500</div></div>
+            <div class="price-row"><div><div class="pr-name">炭酸スパ</div><div class="pr-desc">高濃度炭酸で毛穴の汚れをすっきり。</div></div><div class="pr-price">¥4,400</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ヘアセット・着付け -->
+      <div class="menu-cat">
+        <div class="menu-cat-head"><span class="mch-en">07</span><h2>ヘアセット・着付け</h2></div>
+        <p class="menu-cat-lead">成人式・結婚式・卒業式など、特別な日を華やかに。着付けとヘアセットをまとめてご予約いただけます。</p>
+        <div class="menu-cat-body">
+          <figure class="menu-cat-photo">
+            <img src="images/pexels-kensei-11406238.jpg" alt="和装ヘアセット・着付けの施術例">
+            <figcaption>施術例：振袖 × アップヘアセット</figcaption>
+          </figure>
+          <div>
+            <div class="price-row"><div><div class="pr-name">ヘアセット</div><div class="pr-desc">アップ・編み込み・巻き髪など。</div></div><div class="pr-price">¥4,400</div></div>
+            <div class="price-row"><div><div class="pr-name">ヘアセット ＋ メイク</div><div class="pr-desc">ヘアとメイクをトータルで。</div></div><div class="pr-price">¥8,800</div></div>
+            <div class="price-row"><div><div class="pr-name">着付け（訪問着・袴）</div><div class="pr-desc">小物の確認・着崩れ防止までしっかりと。</div></div><div class="pr-price">¥11,000〜</div></div>
+            <div class="price-row"><div><div class="pr-name">成人式 振袖フルプラン<span class="pr-badge">予約制</span></div><div class="pr-desc">着付け＋ヘアセット＋メイクのセット。要事前予約。</div></div><div class="pr-price">¥27,500</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- メンズ -->
+      <div class="menu-cat">
+        <div class="menu-cat-head"><span class="mch-en">08</span><h2>メンズメニュー</h2></div>
+        <p class="menu-cat-lead">ビジネスマンからアーティストまで。トレンドを押さえたメンズスタイルを。</p>
+        <div class="menu-cat-body">
+          <figure class="menu-cat-photo">
+            <img src="images/pexels-kristina-polianskaia-2617447-4241707.jpg" alt="メンズカットの施術例">
+            <figcaption>施術例：ツーブロック × ハイライト</figcaption>
+          </figure>
+          <div>
+            <div class="price-row"><div><div class="pr-name">メンズカット<span class="pr-badge">人気</span></div><div class="pr-desc">シャンプー・ブロー込み。フェードカットも対応。</div></div><div class="pr-price">¥5,500</div></div>
+            <div class="price-row"><div><div class="pr-name">メンズカラー</div><div class="pr-desc">さりげないおしゃれ染めから白髪ぼかしまで。</div></div><div class="pr-price">¥6,600</div></div>
+            <div class="price-row"><div><div class="pr-name">メンズパーマ</div><div class="pr-desc">スパイラル・ツイスト・ニュアンスパーマなど。</div></div><div class="pr-price">¥8,800</div></div>
+            <div class="price-row"><div><div class="pr-name">メンズカット ＋ パーマ セット</div><div class="pr-desc">カットとパーマをまとめてお得に。</div></div><div class="pr-price">¥12,100</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- セットメニュー -->
+      <div class="menu-cat menu-cat--nophoto">
+        <div class="menu-cat-head"><span class="mch-en">09</span><h2>お得なセットメニュー</h2></div>
+        <p class="menu-cat-lead">人気の組み合わせをお得な価格で。迷ったらまずはこちらから。</p>
+        <div class="menu-cat-body">
+          <div>
+            <div class="price-row"><div><div class="pr-name">カット ＋ カラー</div><div class="pr-desc">定番の組み合わせ。トリートメント付き。</div></div><div class="pr-price">¥14,300</div></div>
+            <div class="price-row"><div><div class="pr-name">カット ＋ カラー ＋ トリートメント</div><div class="pr-desc">髪のダメージが気になる方に。</div></div><div class="pr-price">¥17,600</div></div>
+            <div class="price-row"><div><div class="pr-name">フルコース<span class="pr-badge">特別</span></div><div class="pr-desc">カット＋カラー＋トリートメント＋ヘッドスパ。特別な日のための究極ケア。</div></div><div class="pr-price">¥22,000</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-note">
+        <h4>ご利用にあたって</h4>
+        <ul>
+          <li>表示価格はすべて税込です。髪の長さ・量により追加料金（ロング料金 ¥1,100〜）をいただく場合があります。</li>
+          <li>各種クレジットカード・電子マネー・QRコード決済に対応しています。</li>
+          <li>初回ご来店の方は、カウンセリングのお時間を含め余裕をもってご予約ください。</li>
+          <li>掲載の施術例写真は、当サロンで実際に施術したスタイルの一例です。</li>
+        </ul>
+      </div>
+
+      <p class="center" style="margin-top:48px;"><a href="access.html#reserve" class="btn btn--gold">この内容で予約する →</a></p>
+    </div>
+  </section>
+
+  <div class="pagelinks">
+    <a href="gallery.html" class="pagelink"><span class="pl-en">Gallery</span><span class="pl-jp">施術例ギャラリー</span><span class="pl-arrow">→</span></a>
+    <a href="stylist.html" class="pagelink"><span class="pl-en">Stylist</span><span class="pl-jp">スタイリスト紹介</span><span class="pl-arrow">→</span></a>
+    <a href="access.html" class="pagelink"><span class="pl-en">Access</span><span class="pl-jp">アクセス・予約</span><span class="pl-arrow">→</span></a>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div>
+          <div class="footer-logo">LUMIÈRE</div>
+          <p class="footer-tagline">光のように美しく</p>
+        </div>
+        <nav class="footer-nav">
+          <div><h4>MENU</h4><a href="index.html">Home</a><a href="menu.html">Menu</a><a href="gallery.html">Gallery</a></div>
+          <div><h4>INFO</h4><a href="stylist.html">Stylist</a><a href="access.html">Access</a><a href="access.html#reserve">予約する</a></div>
+        </nav>
+      </div>
+      <p class="footer-copy">© 2026 SALON LUMIÈRE. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
