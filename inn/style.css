@@ -69,6 +69,10 @@ img { display: block; max-width: 100%; }
 .photo.p-3x4 { aspect-ratio: 3/4; }
 .photo.p-16x9 { aspect-ratio: 16/9; }
 
+/* 実写真を入れた枠（プレースホルダーの装飾を消す） */
+.photo.has-img { background-size: cover; background-position: center; }
+.photo.has-img::before, .photo.has-img::after { content: none; display: none; }
+
 /* ===== ボタン ===== */
 .btn {
     display: inline-flex; align-items: center; gap: 10px;
@@ -128,6 +132,8 @@ img { display: block; max-width: 100%; }
 
 /* ===== ヒーロー（CSSで作った風景） ===== */
 .hero { position: relative; height: 100vh; min-height: 620px; overflow: hidden; display: flex; align-items: flex-end; }
+.hero-bg { position: absolute; inset: 0; z-index: 1; background-size: cover; background-position: center; animation: heroZoom 18s ease-out forwards; }
+@keyframes heroZoom { from { transform: scale(1.08); } to { transform: scale(1); } }
 .hero-scene { position: absolute; inset: 0; z-index: 1; background: linear-gradient(180deg, #cfe0e6 0%, #e7ddc8 55%, #d8c7a6 100%); }
 .hero-scene::before { /* 遠景の山 */
     content: ""; position: absolute; left: 0; right: 0; bottom: 34%; height: 42%;
@@ -145,7 +151,7 @@ img { display: block; max-width: 100%; }
 .hero-roof { position: absolute; z-index: 1; right: 8%; bottom: 0; width: 46%; height: 30%;
     background: linear-gradient(180deg, #6b5847 0%, #4d4032 100%);
     clip-path: polygon(8% 100%, 50% 28%, 92% 100%); opacity: .9; }
-.hero::after { content: ''; position: absolute; inset: 0; z-index: 2; background: linear-gradient(180deg, rgba(20,28,24,.28) 0%, rgba(20,28,24,.05) 35%, rgba(20,28,24,.62) 100%); }
+.hero::after { content: ''; position: absolute; inset: 0; z-index: 2; background: linear-gradient(180deg, rgba(20,28,24,.42) 0%, rgba(20,28,24,.12) 32%, rgba(20,28,24,.74) 100%); }
 .hero-content { position: relative; z-index: 3; width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 40px 84px; color: #fff; }
 .hero-eyebrow { font-family: var(--en); font-style: italic; letter-spacing: .2em; font-size: 1rem; color: #f3e9d4; }
 .hero-copy { font-family: var(--serif); font-size: clamp(2.2rem, 5.4vw, 4rem); font-weight: 600; letter-spacing: .1em; line-height: 1.45; margin: 10px 0 18px; text-shadow: 0 2px 24px rgba(0,0,0,.4); }
