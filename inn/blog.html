@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お知らせ・ブログ | 結 -YUI- 一棟貸しの宿</title>
+    <meta name="description" content="結 -YUI- のホストがつづる、お知らせ・季節の便り・周辺だより。ご予約に役立つ最新情報をお届けします。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header header--solid" id="header">
+        <a href="index.html" class="brand">
+            <span class="mark">結</span>
+            <span class="logo">結 -YUI-<small>Private Stay</small></span>
+        </a>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="rooms.html">お部屋・設備</a></li>
+                <li><a href="gallery.html">ギャラリー</a></li>
+                <li><a href="blog.html" class="on">お知らせ</a></li>
+                <li><a href="access.html">アクセス・周辺</a></li>
+                <li><a href="reserve.html" class="nav-book">空室・予約</a></li>
+            </ul>
+        </nav>
+        <button class="burger" onclick="toggleNav()">☰</button>
+    </header>
+    <nav class="spnav" id="spNav">
+        <button class="spclose" onclick="toggleNav()">✕</button>
+        <a href="index.html" onclick="toggleNav()">ホーム</a>
+        <a href="rooms.html" onclick="toggleNav()">お部屋・設備</a>
+        <a href="gallery.html" onclick="toggleNav()">ギャラリー</a>
+        <a href="blog.html" onclick="toggleNav()">お知らせ</a>
+        <a href="access.html" onclick="toggleNav()">アクセス・周辺</a>
+        <a href="reserve.html" class="nav-book" onclick="toggleNav()">空室・予約</a>
+    </nav>
+
+    <main>
+        <div class="page-head">
+            <span class="ph-en">News &amp; Journal</span>
+            <h1>お知らせ・ブログ</h1>
+            <p class="lead">ホストがつづる、季節の便りと周辺のたより。ご予約やご滞在に役立つ最新情報をお届けします。</p>
+            <p class="crumb"><a href="index.html">ホーム</a> ／ お知らせ・ブログ</p>
+        </div>
+
+        <section class="section section--white" style="padding-top:30px;">
+            <div class="wrap">
+                <div class="blog-toolbar">
+                    <div class="filter-chips" id="filterChips"></div>
+                    <a href="blog-compose.html" class="btn btn--terra" style="padding:11px 24px;">✎ 記事を投稿する</a>
+                </div>
+
+                <div class="blog-layout">
+                    <div class="blog-list" id="blogList"></div>
+
+                    <aside class="blog-side">
+                        <div class="side-box side-profile">
+                            <div class="avatar">結</div>
+                            <b>結城 まこと</b>
+                            <p>古民家の宿「結 -YUI-」のホスト。里山の四季や周辺のことを、のんびり綴っています。</p>
+                        </div>
+                        <div class="side-box">
+                            <h3>カテゴリー</h3>
+                            <ul class="side-cat" id="sideCat"></ul>
+                        </div>
+                        <div class="side-box">
+                            <h3>最近の記事</h3>
+                            <ul class="side-recent" id="sideRecent"></ul>
+                        </div>
+                        <div class="side-box" style="text-align:center;">
+                            <h3>ホストの方へ</h3>
+                            <p style="font-size:.85rem;color:var(--muted);margin-bottom:16px;">お知らせや日記を、フォームから投稿できます。</p>
+                            <a href="blog-compose.html" class="btn btn--green side-post-btn">投稿ページへ</a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <nav class="pagelinks">
+        <a href="index.html" class="pagelink"><span class="pl-en">Home</span><span class="pl-jp">ホーム</span></a>
+        <a href="gallery.html" class="pagelink"><span class="pl-en">Gallery</span><span class="pl-jp">ギャラリー</span></a>
+        <a href="reserve.html" class="pagelink"><span class="pl-en">Reserve</span><span class="pl-jp">空室・予約</span></a>
+    </nav>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <p class="fb-logo">結 -YUI-</p>
+                <p>築100年の古民家を改装した、一日一組限定の一棟貸しの宿。里山の静けさと、暮らすような滞在を。</p>
+                <div class="sns"><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Airbnb">A</a></div>
+            </div>
+            <nav class="footer-nav">
+                <div><h4>Explore</h4><a href="index.html">ホーム</a><a href="rooms.html">お部屋・設備</a><a href="gallery.html">ギャラリー</a></div>
+                <div><h4>Info</h4><a href="blog.html">お知らせ</a><a href="access.html">アクセス・周辺</a><a href="reserve.html">空室・予約</a></div>
+            </nav>
+        </div>
+        <p class="copyright">&copy; 2026 YUI Private Stay. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="blog-data.js"></script>
+    <script>
+        (function () {
+            const listEl = document.getElementById('blogList');
+            const chipsEl = document.getElementById('filterChips');
+            const catEl = document.getElementById('sideCat');
+            const recentEl = document.getElementById('sideRecent');
+            let current = 'all';
+
+            // フィルタチップ
+            const cats = ['all'].concat(CATEGORIES);
+            cats.forEach(c => {
+                const b = document.createElement('button');
+                b.className = 'filter-chip' + (c === 'all' ? ' on' : '');
+                b.textContent = c === 'all' ? 'すべて' : c;
+                b.addEventListener('click', () => {
+                    current = c;
+                    chipsEl.querySelectorAll('.filter-chip').forEach(x => x.classList.remove('on'));
+                    b.classList.add('on');
+                    renderBlogList(listEl, current);
+                });
+                chipsEl.appendChild(b);
+            });
+
+            // サイドバー：カテゴリ件数
+            const counts = categoryCounts();
+            CATEGORIES.forEach(c => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = '#';
+                a.innerHTML = '<span></span><span class="count"></span>';
+                a.querySelector('span').textContent = c;
+                a.querySelector('.count').textContent = counts[c] + '件';
+                a.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    current = c;
+                    chipsEl.querySelectorAll('.filter-chip').forEach(x => x.classList.toggle('on', x.textContent === c));
+                    renderBlogList(listEl, current);
+                    document.querySelector('.blog-toolbar').scrollIntoView({ behavior: 'smooth', block: 'start' });
+                });
+                li.appendChild(a);
+                catEl.appendChild(li);
+            });
+
+            // サイドバー：最近の記事
+            getAllPosts().slice(0, 4).forEach(p => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = 'blog-post.html?id=' + encodeURIComponent(p.id);
+                const th = document.createElement('span');
+                th.className = 'sr-thumb photo';
+                const img = safeImg(p.image);
+                if (img) { th.classList.add('has-img'); th.style.backgroundImage = "url('" + img + "')"; }
+                else { th.classList.add('p-green'); }
+                a.appendChild(th);
+                a.appendChild(document.createTextNode(p.title));
+                li.appendChild(a);
+                recentEl.appendChild(li);
+            });
+
+            renderBlogList(listEl, current);
+        })();
+    </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お知らせ・ブログ | 結 -YUI- 一棟貸しの宿</title>
+    <meta name="description" content="結 -YUI- のお知らせ・ブログ記事。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header header--solid" id="header">
+        <a href="index.html" class="brand">
+            <span class="mark">結</span>
+            <span class="logo">結 -YUI-<small>Private Stay</small></span>
+        </a>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="rooms.html">お部屋・設備</a></li>
+                <li><a href="gallery.html">ギャラリー</a></li>
+                <li><a href="blog.html" class="on">お知らせ</a></li>
+                <li><a href="access.html">アクセス・周辺</a></li>
+                <li><a href="reserve.html" class="nav-book">空室・予約</a></li>
+            </ul>
+        </nav>
+        <button class="burger" onclick="toggleNav()">☰</button>
+    </header>
+    <nav class="spnav" id="spNav">
+        <button class="spclose" onclick="toggleNav()">✕</button>
+        <a href="index.html" onclick="toggleNav()">ホーム</a>
+        <a href="rooms.html" onclick="toggleNav()">お部屋・設備</a>
+        <a href="gallery.html" onclick="toggleNav()">ギャラリー</a>
+        <a href="blog.html" onclick="toggleNav()">お知らせ</a>
+        <a href="access.html" onclick="toggleNav()">アクセス・周辺</a>
+        <a href="reserve.html" class="nav-book" onclick="toggleNav()">空室・予約</a>
+    </nav>
+
+    <main>
+        <section class="section section--white" style="padding-top:150px;">
+            <div class="wrap">
+                <article class="article" id="article">
+                    <!-- JSで描画 -->
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <nav class="pagelinks">
+        <a href="blog.html" class="pagelink"><span class="pl-en">News</span><span class="pl-jp">お知らせ一覧</span></a>
+        <a href="gallery.html" class="pagelink"><span class="pl-en">Gallery</span><span class="pl-jp">ギャラリー</span></a>
+        <a href="reserve.html" class="pagelink"><span class="pl-en">Reserve</span><span class="pl-jp">空室・予約</span></a>
+    </nav>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <p class="fb-logo">結 -YUI-</p>
+                <p>築100年の古民家を改装した、一日一組限定の一棟貸しの宿。里山の静けさと、暮らすような滞在を。</p>
+                <div class="sns"><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Airbnb">A</a></div>
+            </div>
+            <nav class="footer-nav">
+                <div><h4>Explore</h4><a href="index.html">ホーム</a><a href="rooms.html">お部屋・設備</a><a href="gallery.html">ギャラリー</a></div>
+                <div><h4>Info</h4><a href="blog.html">お知らせ</a><a href="access.html">アクセス・周辺</a><a href="reserve.html">空室・予約</a></div>
+            </nav>
+        </div>
+        <p class="copyright">&copy; 2026 YUI Private Stay. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="blog-data.js"></script>
+    <script>
+        (function () {
+            const el = document.getElementById('article');
+            const id = new URLSearchParams(location.search).get('id');
+            const post = id ? getPost(id) : null;
+
+            if (!post) {
+                el.innerHTML = '';
+                const box = document.createElement('div');
+                box.className = 'blog-empty';
+                box.innerHTML = '記事が見つかりませんでした。<br><br>';
+                const back = document.createElement('a');
+                back.href = 'blog.html'; back.className = 'btn btn--green'; back.textContent = 'お知らせ一覧へ戻る';
+                box.appendChild(back);
+                el.appendChild(box);
+                return;
+            }
+
+            document.title = post.title + ' | 結 -YUI- お知らせ';
+
+            // ヒーロー画像
+            const img = safeImg(post.image);
+            if (img) {
+                const hero = document.createElement('div');
+                hero.className = 'article-hero photo has-img';
+                hero.style.backgroundImage = "url('" + img + "')";
+                hero.setAttribute('role', 'img');
+                hero.setAttribute('aria-label', post.title);
+                el.appendChild(hero);
+            }
+
+            // メタ
+            const meta = document.createElement('div');
+            meta.className = 'article-meta';
+            const date = document.createElement('span');
+            date.className = 'post-date'; date.textContent = fmtDate(post.date);
+            const cat = document.createElement('span');
+            cat.className = 'post-cat'; cat.textContent = post.category || 'お知らせ';
+            meta.appendChild(date); meta.appendChild(cat);
+            if (post.pinned) { const pin = document.createElement('span'); pin.className = 'post-pin'; pin.textContent = '📌 重要'; meta.appendChild(pin); }
+            if (post._local) { const b = document.createElement('span'); b.className = 'badge-local'; b.textContent = 'この端末の下書き'; meta.appendChild(b); }
+            el.appendChild(meta);
+
+            // タイトル
+            const h1 = document.createElement('h1');
+            h1.textContent = post.title;
+            el.appendChild(h1);
+
+            // 本文
+            const body = document.createElement('div');
+            body.className = 'article-body';
+            renderBody(body, post.body);
+            el.appendChild(body);
+
+            // フッター（戻る + 予約導線）
+            const foot = document.createElement('div');
+            foot.className = 'article-foot';
+            const back = document.createElement('a');
+            back.href = 'blog.html'; back.className = 'read-more'; back.textContent = '← お知らせ一覧へ戻る';
+            const cta = document.createElement('a');
+            cta.href = 'reserve.html'; cta.className = 'btn btn--terra'; cta.textContent = '空室を確認・予約する';
+            foot.appendChild(back); foot.appendChild(cta);
+            el.appendChild(foot);
+        })();
+    </script>
+</body>
+</html>
