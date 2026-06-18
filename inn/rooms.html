@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>お部屋・設備 | 結 -YUI- 一棟貸しの宿</title>
+    <meta name="description" content="結 -YUI- のお部屋、間取り、設備・アメニティ、宿泊スペックのご案内。">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500;1,600&family=Shippori+Mincho:wght@500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header header--solid" id="header">
+        <a href="index.html" class="brand">
+            <span class="mark">結</span>
+            <span class="logo">結 -YUI-<small>Private Stay</small></span>
+        </a>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">ホーム</a></li>
+                <li><a href="rooms.html" class="on">お部屋・設備</a></li>
+                <li><a href="gallery.html">ギャラリー</a></li>
+                <li><a href="access.html">アクセス・周辺</a></li>
+                <li><a href="reserve.html" class="nav-book">空室・予約</a></li>
+            </ul>
+        </nav>
+        <button class="burger" onclick="toggleNav()">☰</button>
+    </header>
+    <nav class="spnav" id="spNav">
+        <button class="spclose" onclick="toggleNav()">✕</button>
+        <a href="index.html" onclick="toggleNav()">ホーム</a>
+        <a href="rooms.html" onclick="toggleNav()">お部屋・設備</a>
+        <a href="gallery.html" onclick="toggleNav()">ギャラリー</a>
+        <a href="access.html" onclick="toggleNav()">アクセス・周辺</a>
+        <a href="reserve.html" class="nav-book" onclick="toggleNav()">空室・予約</a>
+    </nav>
+
+    <main>
+        <div class="page-head">
+            <span class="ph-en">Rooms &amp; Facilities</span>
+            <h1>お部屋・設備</h1>
+            <p class="lead">築100年の母屋を一棟まるごと。最大6名さままで、暮らすようにお過ごしいただけます。</p>
+            <p class="crumb"><a href="index.html">ホーム</a> ／ お部屋・設備</p>
+        </div>
+
+        <!-- 間取り・空間 -->
+        <section class="section section--white" style="padding-top:40px;">
+            <div class="wrap fade-in-up">
+                <div class="spaces">
+                    <div class="space-row">
+                        <div class="photo p-room p-16x9" data-label="主屋・畳の間"></div>
+                        <div class="space-info">
+                            <span class="space-no">Living</span>
+                            <h3>大黒柱のある主屋</h3>
+                            <p>10畳と8畳の続き間。障子を開け放てば広い一室に。ローテーブルと座椅子、夜は布団を敷いてお休みいただけます。Wi-Fi完備で、仕事を持ち込んでの長期滞在にも。</p>
+                            <div class="space-tags"><span>10畳+8畳 続き間</span><span>布団 最大6名</span><span>床暖房</span><span>Wi-Fi</span></div>
+                        </div>
+                    </div>
+                    <div class="space-row reverse">
+                        <div class="photo p-bath p-16x9" data-label="檜の内風呂"></div>
+                        <div class="space-info">
+                            <span class="space-no">Bath</span>
+                            <h3>坪庭を望む檜風呂</h3>
+                            <p>総檜の湯船から、ライトアップされた坪庭を眺める贅沢。給湯は24時間。洗い場も広く、お子さま連れでも安心です。タオル・基礎化粧品まで揃えています。</p>
+                            <div class="space-tags"><span>檜風呂</span><span>24時間入浴可</span><span>独立洗面・脱衣所</span></div>
+                        </div>
+                    </div>
+                    <div class="space-row">
+                        <div class="photo p-food p-16x9" data-label="土間キッチン・囲炉裏"></div>
+                        <div class="space-info">
+                            <span class="space-no">Kitchen</span>
+                            <h3>土間のダイニング & 囲炉裏</h3>
+                            <p>IHコンロ、炊飯器、調理器具、食器を一通り完備。中央には本物の囲炉裏。串に刺した食材を炙りながら、火を囲む夜をどうぞ。薪と炭はご用意しています。</p>
+                            <div class="space-tags"><span>IH 2口</span><span>囲炉裏</span><span>冷蔵庫・電子レンジ</span><span>食器一式</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- アメニティ一覧 -->
+        <section class="section section--soft">
+            <div class="wrap fade-in-up">
+                <div class="section-head">
+                    <span class="s-en">Amenities</span>
+                    <h2>設備・アメニティ</h2>
+                    <p>手ぶらでお越しいただけるよう、ひと通りご用意しています。</p>
+                </div>
+                <div class="amenity-grid">
+                    <div class="amenity-cat">
+                        <h4>基本設備</h4>
+                        <ul>
+                            <li>高速Wi-Fi（無料）</li>
+                            <li>エアコン・床暖房</li>
+                            <li>薪ストーブ・囲炉裏</li>
+                            <li>液晶テレビ / Bluetoothスピーカー</li>
+                            <li>無料駐車場（2台）</li>
+                        </ul>
+                    </div>
+                    <div class="amenity-cat">
+                        <h4>バス・洗面</h4>
+                        <ul>
+                            <li>檜風呂（24時間）</li>
+                            <li>シャンプー・コンディショナー</li>
+                            <li>ボディソープ・洗顔</li>
+                            <li>ドライヤー / 基礎化粧品</li>
+                            <li>バスタオル・フェイスタオル</li>
+                        </ul>
+                    </div>
+                    <div class="amenity-cat">
+                        <h4>キッチン</h4>
+                        <ul>
+                            <li>IHコンロ・炊飯器</li>
+                            <li>冷蔵庫・電子レンジ・電気ケトル</li>
+                            <li>鍋・フライパン・包丁</li>
+                            <li>食器・カトラリー一式</li>
+                            <li>調味料・コーヒー / 緑茶</li>
+                        </ul>
+                    </div>
+                    <div class="amenity-cat">
+                        <h4>うれしい備え</h4>
+                        <ul>
+                            <li>ベビーチェア・補助便座</li>
+                            <li>ボードゲーム・絵本</li>
+                            <li>縁側の足湯・ハンモック</li>
+                            <li>BBQグリル（屋外）</li>
+                            <li>常備薬・救急セット</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 宿泊スペック -->
+        <section class="section section--white">
+            <div class="wrap fade-in-up" style="max-width:820px;">
+                <div class="section-head">
+                    <span class="s-en">Details</span>
+                    <h2>宿泊概要</h2>
+                </div>
+                <table class="spec-table">
+                    <tr><th>定員</th><td>2〜6名（一日一組限定の貸切）</td></tr>
+                    <tr><th>間取り</th><td>主屋（10畳+8畳）・土間ダイニング・檜風呂・離れの蔵</td></tr>
+                    <tr><th>チェックイン</th><td>15:00 〜 19:00（セルフチェックイン / スマートロック）</td></tr>
+                    <tr><th>チェックアウト</th><td>〜 11:00</td></tr>
+                    <tr><th>料金</th><td>1棟 38,000円〜 / 泊（人数・季節により変動）</td></tr>
+                    <tr><th>食事</th><td>素泊まり（自炊可）。地元食材のお届けプランあり（要予約）</td></tr>
+                    <tr><th>駐車場</th><td>無料 2台（事前予約で追加可）</td></tr>
+                    <tr><th>ペット</th><td>応相談（小型犬1頭まで・追加清掃費あり）</td></tr>
+                </table>
+                <p class="center" style="margin-top:48px;"><a href="reserve.html" class="btn btn--terra">空室を確認・予約する</a></p>
+            </div>
+        </section>
+    </main>
+
+    <nav class="pagelinks">
+        <a href="gallery.html" class="pagelink"><span class="pl-en">Gallery</span><span class="pl-jp">ギャラリー</span></a>
+        <a href="access.html" class="pagelink"><span class="pl-en">Access</span><span class="pl-jp">アクセス・周辺</span></a>
+        <a href="reserve.html" class="pagelink"><span class="pl-en">Reserve</span><span class="pl-jp">空室・予約</span></a>
+    </nav>
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <p class="fb-logo">結 -YUI-</p>
+                <p>築100年の古民家を改装した、一日一組限定の一棟貸しの宿。里山の静けさと、暮らすような滞在を。</p>
+                <div class="sns"><a href="#" aria-label="Instagram">IG</a><a href="#" aria-label="Facebook">f</a><a href="#" aria-label="Airbnb">A</a></div>
+            </div>
+            <nav class="footer-nav">
+                <div><h4>Explore</h4><a href="index.html">ホーム</a><a href="rooms.html">お部屋・設備</a><a href="gallery.html">ギャラリー</a></div>
+                <div><h4>Info</h4><a href="access.html">アクセス・周辺</a><a href="reserve.html">空室・予約</a></div>
+            </nav>
+        </div>
+        <p class="copyright">&copy; 2026 YUI Private Stay. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

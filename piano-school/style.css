@@ -347,4 +347,30 @@ ul { list-style: none; }
   .course-grid { grid-template-columns: 1fr; }
   .teacher-card { grid-template-columns: 1fr; }
   .about-stats { justify-content: space-around; gap: 12px; }
+
+  /* スケジュール表：横スクロールをやめ、時間帯ごとのカードに組み替え */
+  .sch-wrap { overflow-x: visible; }
+  .sch-table { min-width: 0; width: 100%; display: block; border-spacing: 0; }
+  .sch-table thead { display: none; }
+  .sch-table tbody, .sch-table tr, .sch-table td { display: block; }
+  .sch-table tr {
+    background: #fff; border-radius: 18px; padding: 6px 16px 12px;
+    margin-bottom: 16px; box-shadow: 0 6px 20px rgba(255,122,156,0.12);
+  }
+  .sch-table td { padding: 0; }
+  .sch-table td.t {
+    background: transparent; color: var(--purple); font-size: 1.05rem;
+    text-align: left; padding: 10px 0; margin-bottom: 4px;
+    border-bottom: 2px dashed #eadffb;
+  }
+  .sch-table td:not(.t) {
+    background: transparent; display: flex; align-items: center;
+    justify-content: space-between; padding: 9px 2px; text-align: right;
+    border-bottom: 1px solid #f4ecf6; font-weight: 700; color: var(--ink);
+  }
+  .sch-table tr td:last-child { border-bottom: none; }
+  .sch-table td:not(.t)::before {
+    content: attr(data-day); color: var(--teal); font-weight: 700;
+    font-size: 0.92rem;
+  }
 }
